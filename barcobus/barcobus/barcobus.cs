@@ -9,12 +9,15 @@ namespace barcobus
     public class barcobus
     {
         public static String rutaArchivo = "barcos.xml";
+        public static String rutaArchivo2 = "tripulantes.xml";
+        public static String rutaArchivo3 = "encargados.xml";
         private List<barco> barcos = new List<barco>();
         public List<barco> Barcos
         {
+
             get { return barcos; }
-            set { barcos = value; }
         }
+           
         public void guardarBarco(barco b) {
             Barcos.Add(b);
             guardarBarcos();

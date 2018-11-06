@@ -11,6 +11,8 @@ namespace barcobus
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            barcobus b = new barcobus();
+
 
         }
     }
