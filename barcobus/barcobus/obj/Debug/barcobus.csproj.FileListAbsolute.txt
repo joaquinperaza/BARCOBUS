@@ -1,0 +1,4 @@
+C:\Users\Joaquin Peraza\Documents\GitHub\BARCOBUS\barcobus\barcobus\bin\barcobus.dll
+C:\Users\Joaquin Peraza\Documents\GitHub\BARCOBUS\barcobus\barcobus\bin\barcobus.pdb
+C:\Users\Joaquin Peraza\Documents\GitHub\BARCOBUS\barcobus\barcobus\obj\Debug\barcobus.dll
+C:\Users\Joaquin Peraza\Documents\GitHub\BARCOBUS\barcobus\barcobus\obj\Debug\barcobus.pdb
