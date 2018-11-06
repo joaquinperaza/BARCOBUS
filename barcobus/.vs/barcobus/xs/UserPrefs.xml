@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{08A3EB21-E14E-4A10-BBFD-79B1044D9552}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="barcobus/barcobus.cs">
+    <Files>
+      <File FileName="barcobus/barcobus.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="barcobus" expanded="True">
+            <Node name="barcobus" expanded="True">
+              <Node name="Styles" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.barcobus PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+</Properties>

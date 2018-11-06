@@ -1,4 +1,10 @@
-C:\Users\Joaquin Peraza\Documents\GitHub\BARCOBUS\barcobus\barcobus\bin\barcobus.dll
-C:\Users\Joaquin Peraza\Documents\GitHub\BARCOBUS\barcobus\barcobus\bin\barcobus.pdb
-C:\Users\Joaquin Peraza\Documents\GitHub\BARCOBUS\barcobus\barcobus\obj\Debug\barcobus.dll
-C:\Users\Joaquin Peraza\Documents\GitHub\BARCOBUS\barcobus\barcobus\obj\Debug\barcobus.pdb
+C:/Users/Joaquin Peraza/Documents/GitHub/BARCOBUS/barcobus/barcobus/bin/barcobus.dll
+C:/Users/Joaquin Peraza/Documents/GitHub/BARCOBUS/barcobus/barcobus/bin/barcobus.pdb
+C:/Users/Joaquin Peraza/Documents/GitHub/BARCOBUS/barcobus/barcobus/obj/Debug/barcobus.dll
+C:/Users/Joaquin Peraza/Documents/GitHub/BARCOBUS/barcobus/barcobus/obj/Debug/barcobus.pdb
+/Users/joaquin/Documents/BARCOBUS/barcobus/barcobus/bin/barcobus.dll
+/Users/joaquin/Documents/BARCOBUS/barcobus/barcobus/bin/barcobus.pdb
+/Users/joaquin/Documents/BARCOBUS/barcobus/barcobus/obj/Debug/barcobus.csprojAssemblyReference.cache
+/Users/joaquin/Documents/BARCOBUS/barcobus/barcobus/obj/Debug/barcobus.csproj.CoreCompileInputs.cache
+/Users/joaquin/Documents/BARCOBUS/barcobus/barcobus/obj/Debug/barcobus.dll
+/Users/joaquin/Documents/BARCOBUS/barcobus/barcobus/obj/Debug/barcobus.pdb
