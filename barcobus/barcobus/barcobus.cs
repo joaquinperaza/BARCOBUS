@@ -28,7 +28,7 @@ namespace barcobus
             writer.Serialize(file, barcos);
             file.Close();
         }
-        public void leerBarcos()
+        private void leerBarcos()
         {
             List<barco>  barcos2 = new List<barco>();
 
@@ -42,6 +42,9 @@ namespace barcobus
             }
 
             barcos = barcos2;
+        }
+        public void Barco(){
+            leerBarcos();
         }
 
   
