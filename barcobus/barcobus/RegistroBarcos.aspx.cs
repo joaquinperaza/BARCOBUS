@@ -7,13 +7,10 @@ using System.Web.UI.WebControls;
 
 namespace barcobus
 {
-    public partial class _Default : System.Web.UI.Page
+    public partial class RegistroBarcos : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            barcobusDB b = new barcobusDB();
-            
-
 
         }
     }

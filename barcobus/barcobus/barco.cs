@@ -28,7 +28,17 @@ namespace barcobus
             get { return capacidadTripulantes; }
             set { capacidadTripulantes = value; }
         }
+        private List<registroMantenimiento> logMantenimientos= new List<registroMantenimiento>();
 
-     
+        public List<registroMantenimiento> LogMantenimientos
+        {
+             get { return logMantenimientos; }
+        }
+        private List<registroReparacion> logReparaciones = new List<registroReparacion>();
+
+        public List<registroReparacion> LogReparaciones
+        {
+         get { return logReparaciones; }
+        }
     }
 }

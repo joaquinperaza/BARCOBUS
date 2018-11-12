@@ -8,49 +8,36 @@ namespace barcobus
 {
     public class barcobus
     {
-        public static String rutaArchivo = "barcos.xml";
-        public static String rutaArchivo2 = "tripulantes.xml";
-        public static String rutaArchivo3 = "encargados.xml";
         private List<barco> barcos = new List<barco>();
         public List<barco> Barcos
         {
-
             get { return barcos; }
         }
+        private List<tripulante> tripulantes = new List<tripulante>();
+        public List<tripulante> Tripulantes
+        {
+            get { return tripulantes; }
+        }
+        private List<encargado> encargados = new List<encargado>();
+        public List<encargado> Encargados
+        {
+            get { return encargados; }
+        }
+        private List<mantenimiento> mantenimientos = new List<mantenimiento>();
+        public List<mantenimiento> Mantenimientos
+        {
+            get { return mantenimientos; }
            
-        public void guardarBarco(barco b) {
-            Barcos.Add(b);
-            guardarBarcos();
         }
-        private void guardarBarcos()
+        private List<logItem> log = new List<logItem>();
+        public List<logItem> Log
         {
-            System.Xml.Serialization.XmlSerializer writer =
-                new System.Xml.Serialization.XmlSerializer(typeof(List<barco>));
-
-            System.IO.StreamWriter file = new System.IO.StreamWriter(rutaArchivo);
-            writer.Serialize(file, barcos);
-            file.Close();
-        }
-        private void leerBarcos()
-        {
-            List<barco>  barcos2 = new List<barco>();
-
-            if (File.Exists(rutaArchivo))
-            {
-                System.Xml.Serialization.XmlSerializer reader =
-                new System.Xml.Serialization.XmlSerializer(typeof(List<barco>));
-                System.IO.StreamReader file = new System.IO.StreamReader(rutaArchivo);
-                barcos2 = (List<barco>)reader.Deserialize(file);
-                file.Close();
-            }
-
-            barcos = barcos2;
-        }
-        public void Barco(){
-            leerBarcos();
+            get { return log; }
+            
         }
 
-  
+
+
       
     }
 }

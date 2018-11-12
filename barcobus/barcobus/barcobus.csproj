@@ -56,6 +56,8 @@
     <Content Include="Account\ChangePasswordSuccess.aspx" />
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
+    <Content Include="admin.aspx" />
+    <Content Include="RegistroBarcos.aspx" />
     <Content Include="Styles\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
@@ -106,8 +108,16 @@
     <Compile Include="Account\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
+    <Compile Include="admin.aspx.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin.aspx.designer.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="barco.cs" />
     <Compile Include="barcobus.cs" />
+    <Compile Include="barcobusDB.cs" />
     <Compile Include="barcoLento.cs" />
     <Compile Include="barcoRapido.cs" />
     <Compile Include="Default.aspx.cs">
@@ -117,6 +127,18 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="encargado.cs" />
+    <Compile Include="logItem.cs" />
+    <Compile Include="mantenimiento.cs" />
+    <Compile Include="RegistroBarcos.aspx.cs">
+      <DependentUpon>RegistroBarcos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistroBarcos.aspx.designer.cs">
+      <DependentUpon>RegistroBarcos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="registroMantenimiento.cs" />
+    <Compile Include="registroReparacion.cs" />
     <Compile Include="tripulante.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

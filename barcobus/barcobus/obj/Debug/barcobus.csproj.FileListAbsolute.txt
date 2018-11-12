@@ -8,3 +8,7 @@ C:/Users/Joaquin Peraza/Documents/GitHub/BARCOBUS/barcobus/barcobus/obj/Debug/ba
 /Users/joaquin/Documents/BARCOBUS/barcobus/barcobus/obj/Debug/barcobus.csproj.CoreCompileInputs.cache
 /Users/joaquin/Documents/BARCOBUS/barcobus/barcobus/obj/Debug/barcobus.dll
 /Users/joaquin/Documents/BARCOBUS/barcobus/barcobus/obj/Debug/barcobus.pdb
+\\Mac\Home\Documents\BARCOBUS\barcobus\barcobus\bin\barcobus.dll
+\\Mac\Home\Documents\BARCOBUS\barcobus\barcobus\bin\barcobus.pdb
+\\Mac\Home\Documents\BARCOBUS\barcobus\barcobus\obj\Debug\barcobus.dll
+\\Mac\Home\Documents\BARCOBUS\barcobus\barcobus\obj\Debug\barcobus.pdb
