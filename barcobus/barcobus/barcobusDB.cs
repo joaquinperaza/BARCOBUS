@@ -121,7 +121,7 @@ namespace barcobus
                 db.Encargados.Add(newEncargado);
                 logItem e = new logItem();
                 e.Encargado = encargado;
-                e.Operacion = "Creacion de encargado: "+encargado.Nombre;
+                e.Operacion = "Creacion de encargado: "+newEncargado.Nombre;
                 db.Log.Add(e);
                 guardardb();
             }
@@ -177,6 +177,95 @@ namespace barcobus
                 throw new System.UnauthorizedAccessException();
             }
         }
+        /// <summary>
+        /// Asigna tripulante a un barco
+        /// </summary>
+        /// <param name="barco">Barco a asignarle tripulacion</param>
+        /// <param name="encargado">Encargado de la asignacion</param>
+        /// <param name="tripulante">Tripulante a asignar</param>
+        public void asignarTripulante(barco barco, encargado encargado, tripulante tripulante) {
+            if (encargado.Permisos > 0)
+            { bool chequeo=true;
+            if (db.Barcos.Find(b2 => b2.Nombre == barco.Nombre).Tripulacion.Count >= db.Barcos.Find(b2 => b2.Nombre == barco.Nombre).CapacidadTripulantes) { chequeo = false; }
+            if (db.Barcos.Find(b2 => b2.Nombre == barco.Nombre).Tripulacion.Contains(tripulante)) { chequeo = false; }
+            db.Barcos.Find(b2 => b2.Nombre == barco.Nombre).Tripulacion.ForEach(delegate(tripulante t)
+        {
+            Console.WriteLine(t);
+        });
+                
+                if(chequeo==true){
+                db.Barcos.Find(b2 => b2.Nombre == barco.Nombre).Tripulacion.Add(tripulante);
+                logItem e = new logItem();
+                e.Encargado = encargado;
+                e.Barco = barco;
+                e.Tripulante = tripulante;
+                e.Operacion = "Asignacion de tripulante";
+                db.Log.Add(e);
+                guardardb();}
+                
+            }
+            else
+            {
+                throw new System.UnauthorizedAccessException();
+            }
+        }
+
+        /// <summary>
+        /// Lista la tripulacion
+        /// </summary>
+        /// <param name="barco">Barco a listar la tripulacion</param>
+        /// <param name="encargado">Encargado que realiza la consulta</param>
+        /// <returns>Lista de tripulantes del barco.</returns>
+        public List<tripulante> listarTripulacion(barco barco, encargado encargado)
+        {
+            if (encargado.Permisos > 0)
+            {
+                List<tripulante> t=db.Barcos.Find(b2 => b2.Nombre == barco.Nombre).Tripulacion;
+                logItem e = new logItem();
+                e.Encargado = encargado;
+                e.Barco = barco;
+                e.Operacion = "Consulta de tripulacion";
+                db.Log.Add(e);
+                guardardb();
+                return t;
+            }
+            else
+            {   
+                throw new System.UnauthorizedAccessException();
+            }
+        }
+        public class resultado {
+            public int capitanes;
+            public int oficialesCubierta;
+            public int pilotos;
+            public int comisarios;
+            public int jefesDeMaquina;
+            public int servicios;
+        }
+        public resultado tripulantes() {
+            resultado r = new resultado();
+            
+            return r;
+        }
+        public void editarPermiso(encargado encargado, encargado encargadoAEditar, int permisoNuevo) {
+           
+            if (encargado.Permisos > 2)
+            {
+                db.Encargados.Find(e2 => e2.Nombre == encargadoAEditar.Nombre).Permisos = permisoNuevo;
+                logItem e = new logItem();
+                e.Encargado = encargado;
+                e.Barco = barco;
+                e.Operacion = "Consulta de tripulacion";
+                db.Log.Add(e);
+                guardardb();
+                return t;
+            }
+            else
+            {
+                throw new System.UnauthorizedAccessException();
+            }
+        }
+
 
 
 

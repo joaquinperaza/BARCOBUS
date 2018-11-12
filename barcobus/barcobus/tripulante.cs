@@ -5,7 +5,7 @@ using System.Web;
 
 namespace barcobus
 {
-    class tripulante
+    public class tripulante
     {
         private String nombre;
 
