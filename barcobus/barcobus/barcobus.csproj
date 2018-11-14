@@ -127,6 +127,7 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="EmailException.cs" />
     <Compile Include="encargado.cs" />
     <Compile Include="logItem.cs" />
     <Compile Include="mantenimiento.cs" />

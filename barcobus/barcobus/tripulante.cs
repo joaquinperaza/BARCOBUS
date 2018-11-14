@@ -21,6 +21,13 @@ namespace barcobus
             get { return ci; }
             set { ci = value; }
         }
+        private int rol;
+
+        public int Rol
+        {
+            get { return rol; }
+            set { rol = value; }
+        }
 
     }
 }
