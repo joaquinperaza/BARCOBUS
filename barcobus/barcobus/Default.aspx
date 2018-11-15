@@ -49,7 +49,7 @@
         <asp:TextBox ID="TextBox4" runat="server" TextMode="Number"></asp:TextBox>
         <br />
         <br />
-        CLAVE<br />
+        CLAVE:<br />
         <asp:TextBox ID="TextBox5" runat="server" TextMode="Password"></asp:TextBox>
         <br />
         <br />
