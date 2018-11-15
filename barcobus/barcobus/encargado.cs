@@ -35,5 +35,11 @@ namespace barcobus
             get { return permisos; }
             set { permisos = value; }
         }
-    }
+        private String password;
+    
+        public String Password
+        {
+            get { return password; }
+            set { password = value; }
+        }}
 }

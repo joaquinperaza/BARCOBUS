@@ -62,7 +62,7 @@ namespace barcobus
             get { return operacion; }
             set { operacion = value; }
         }
-        public String ToString() {
+        public override String ToString() {
             String s = "Excepcion de acceso no autorizado: \n Usuario: "+Encargado.Nombre+" sobre los elementos \n Barco: "+Barco.Nombre+"\n Tripulante: "+Tripulante.Nombre+"\n Mantenimiento: "+Mantenimiento.Descripcion+" \n RegistroReparacion: "+registroReparacion.Descripcion+"\n RegistroMantenimeinto: "+registroMantenimiento.Mantenimiento.Descripcion+"\n OPERACION DENEGADA: "+operacion;
             return s;
         }

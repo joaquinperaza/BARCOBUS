@@ -9,11 +9,11 @@ namespace barcobus
 {
     public class Global : System.Web.HttpApplication
     {
+        public static barcobusDB b;
 
         void Application_Start(object sender, EventArgs e)
         {
-            // Código que se ejecuta al iniciarse la aplicación
-
+            b = new barcobusDB();
         }
 
         void Application_End(object sender, EventArgs e)

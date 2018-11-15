@@ -40,7 +40,7 @@ namespace barcobus
         {
          get { return logReparaciones; }
         }
-        private List<tripulante> tripulacion;
+        private List<tripulante> tripulacion= new List<tripulante>();
 
         public List<tripulante> Tripulacion
         {

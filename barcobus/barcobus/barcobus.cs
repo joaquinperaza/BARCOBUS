@@ -35,6 +35,7 @@ namespace barcobus
             get { return log; }
             
         }
+        
 
 
 

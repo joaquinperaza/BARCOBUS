@@ -3,17 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.IO;
+using System.Text;
+using System.Security.Cryptography;
 
 namespace barcobus
 {
     public class barcobusDB
     {
         private barcobus db=new barcobus();
-        public static String rutaArchivo = "db.xml";
+        public static String rutaArchivo = HttpRuntime.AppDomainAppPath + "db.xml";
         private void guardardb()
         {
+
+            
             System.Xml.Serialization.XmlSerializer writer =
-                new System.Xml.Serialization.XmlSerializer(typeof(List<barcobus>));
+            new System.Xml.Serialization.XmlSerializer(typeof(barcobus));
 
             System.IO.StreamWriter file = new System.IO.StreamWriter(rutaArchivo);
             writer.Serialize(file, db);
@@ -54,8 +58,6 @@ namespace barcobus
             e.Barco = barco;
             e.Encargado = encargado;
             e.Operacion = "Creacion de barco";
-            3
-                .
             if (encargado.Permisos > 1)
             {db.Barcos.Add(barco);
             db.Log.Add(e);
@@ -132,6 +134,26 @@ namespace barcobus
             {
                 EmailException ee = new EmailException(e);
             }
+        }
+        public void initEncargado(encargado e) {
+            logItem ee = new logItem();
+            ee.Encargado = e;
+            ee.Operacion = "Inicializacion de encargado: " + e.Nombre;
+            if (db.Encargados.Count == 0)
+            {
+                db.Encargados.Add(e);
+                guardardb();
+            }
+            else {
+                EmailException eee = new EmailException(ee);
+            }
+        }
+        public bool boot() {
+            bool b = false;
+            if (db.Encargados.Count == 0) {
+                b = true;
+            }
+            return b;
         }
         /// <summary>
         /// Registrar un nuevo mantenimeitno a barco
@@ -293,6 +315,45 @@ namespace barcobus
                 EmailException ee = new EmailException(e);
             }
         }
+        public encargado login(Int32 ci, String clave) {
+            encargado e = db.Encargados.Find(e2 => e2.Ci == ci);
+            if(e!=null){
+            if (e.Password == clave)
+            {
+                return e;
+            }
+            else { return null; }
+            }
+            else { return null; }
+        }
+        public string CalculateMD5Hash(string input)
+
+    {
+        if (input != null)
+        {
+            // step 1, calculate MD5 hash from input
+
+            MD5 md5 = System.Security.Cryptography.MD5.Create();
+
+            byte[] inputBytes = System.Text.Encoding.ASCII.GetBytes(input);
+
+            byte[] hash = md5.ComputeHash(inputBytes);
+
+            // step 2, convert byte array to hex string
+
+            StringBuilder sb = new StringBuilder();
+
+            for (int i = 0; i < hash.Length; i++)
+            {
+
+                sb.Append(hash[i].ToString("X2"));
+
+            }
+
+            return sb.ToString();
+        }
+        else { return "NO TEXT"; }
+}
 
 
 
