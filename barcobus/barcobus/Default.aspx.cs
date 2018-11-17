@@ -47,7 +47,7 @@ namespace barcobus
             else { Session["auth"] = Auth;
             Panel2.Visible = false;
             }} else {
-                Label1.Text = "Ingrese sus datos de ususario";
+                Label1.Text = "Ingrese sus datos de usuario";
             }
             
         }
