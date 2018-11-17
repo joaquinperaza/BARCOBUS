@@ -40,11 +40,16 @@ namespace barcobus
 
         protected void Button2_Click(object sender, EventArgs e)
         {
+            if (TextBox4.Text != "" && TextBox5.Text != "")
+            {
             encargado Auth = Global.b.login(Convert.ToInt32(TextBox4.Text), Global.b.CalculateMD5Hash( TextBox5.Text));
             if (Auth == null) { Label1.Text = "Credenciales invalidas"; }
             else { Session["auth"] = Auth;
             Panel2.Visible = false;
+            }} else {
+                Label1.Text = "Ingrese sus datos de ususario";
             }
+            
         }
 
       

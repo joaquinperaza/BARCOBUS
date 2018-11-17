@@ -56,7 +56,7 @@
         </strong>
         <asp:Button ID="Button2" runat="server" onclick="Button2_Click" Text="LOGIN" />
         <strong>
-        <asp:Label ID="Label1" runat="server"></asp:Label>
+        <asp:Label ID="Label1" runat="server" ForeColor="Red"></asp:Label>
         </strong><br />
 
     </asp:Panel>
