@@ -11,14 +11,13 @@ namespace barcobus
     public class barcobusDB
     {
         private barcobus db=new barcobus();
-        public static String rutaArchivo = HttpRuntime.AppDomainAppPath + "db.xml";
+        public static String rutaArchivo = HttpRuntime.AppDomainAppPath + "DsB.xml";
         private void guardardb()
         {
 
             
             System.Xml.Serialization.XmlSerializer writer =
             new System.Xml.Serialization.XmlSerializer(typeof(barcobus));
-
             System.IO.StreamWriter file = new System.IO.StreamWriter(rutaArchivo);
             writer.Serialize(file, db);
             file.Close();
@@ -141,6 +140,7 @@ namespace barcobus
             ee.Operacion = "Inicializacion de encargado: " + e.Nombre;
             if (db.Encargados.Count == 0)
             {
+                db.Log.Add(ee);
                 db.Encargados.Add(e);
                 guardardb();
             }
@@ -156,7 +156,7 @@ namespace barcobus
             return b;
         }
         /// <summary>
-        /// Registrar un nuevo mantenimeitno a barco
+        /// Registrar un nuevo mantenimiento a barco
         /// </summary>
         /// <param name="rmantenimiento">Solicitud de manetenimiento</param>
         /// <param name="barco">Barco a realizar el mantenimiento</param>

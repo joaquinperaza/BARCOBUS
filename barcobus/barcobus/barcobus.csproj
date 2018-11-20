@@ -57,6 +57,7 @@
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
     <Content Include="admin.aspx" />
+    <Content Include="RegistroTripulante.aspx" />
     <Content Include="RegistroBarcos.aspx" />
     <Content Include="Styles\Site.css" />
     <Content Include="Default.aspx" />
@@ -120,6 +121,13 @@
     <Compile Include="barcobusDB.cs" />
     <Compile Include="barcoLento.cs" />
     <Compile Include="barcoRapido.cs" />
+    <Compile Include="RegistroTripulante.aspx.cs">
+      <DependentUpon>RegistroTripulante.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistroTripulante.aspx.designer.cs">
+      <DependentUpon>RegistroTripulante.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -2,9 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Xml.Serialization;
 
 namespace barcobus
 {
+
+    [XmlInclude(typeof(barcoLento))]
+    [XmlInclude(typeof(barcoRapido))]
     public class barco
     {
         private String nombre;

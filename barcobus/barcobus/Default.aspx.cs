@@ -35,6 +35,7 @@ namespace barcobus
             admin.Permisos = 5;
             admin.PersonasACargo = 0;
             Global.b.initEncargado(admin);
+            Session["auth"] = admin;
             Panel1.Visible = false;
         }
 

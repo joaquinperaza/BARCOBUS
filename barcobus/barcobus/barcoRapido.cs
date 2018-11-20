@@ -5,7 +5,7 @@ using System.Web;
 
 namespace barcobus
 {
-    public class barcoRapido
+    public class barcoRapido : barco
     {
         private int velocidadMax;
 
