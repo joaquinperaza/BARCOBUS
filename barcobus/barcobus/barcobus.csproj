@@ -57,6 +57,7 @@
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
     <Content Include="admin.aspx" />
+    <Content Include="altaReparacion.aspx" />
     <Content Include="asignar.aspx" />
     <Content Include="barcoLog.aspx" />
     <Content Include="crearMantenimiento.aspx" />
@@ -120,6 +121,13 @@
     </Compile>
     <Compile Include="admin.aspx.designer.cs">
       <DependentUpon>admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="altaReparacion.aspx.cs">
+      <DependentUpon>altaReparacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="altaReparacion.aspx.designer.cs">
+      <DependentUpon>altaReparacion.aspx</DependentUpon>
     </Compile>
     <Compile Include="asignar.aspx.cs">
       <DependentUpon>asignar.aspx</DependentUpon>

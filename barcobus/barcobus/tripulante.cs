@@ -35,6 +35,10 @@ namespace barcobus
             get { return fechaIngreso; }
             set { fechaIngreso = value; }
         }
+        public tripulante() {
+            fechaIngreso = DateTime.UtcNow;
+        }
+
         public override String ToString() { return nombre; }
 
     }

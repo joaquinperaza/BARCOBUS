@@ -13,7 +13,7 @@ namespace barcobus
     public class barcobusDB
     {
         private barcobus db=new barcobus();
-        public static String rutaArchivo = HttpRuntime.AppDomainAppPath + "DsB.xml";
+        public static String rutaArchivo = HttpRuntime.AppDomainAppPath + "db.xml";
         private void guardardb()
         {
 
@@ -184,10 +184,11 @@ namespace barcobus
         /// Registrar reparacion
         /// </summary>
         /// <param name="rreparacion">Registro de reparacion</param>
-        /// <param name="barco">Barco reparado</param>
+        /// <param name="b">Barco reparado</param>
         /// <param name="encargado">Encargado del reporte</param>
-        public void registrarReparacion(registroReparacion rreparacion, barco barco, encargado encargado)
+        public void registrarReparacion(registroReparacion rreparacion, string b, encargado encargado)
         {
+            barco barco = db.Barcos.Find(b2 => b2.Nombre == b);
             logItem e = new logItem();
             e.Encargado = encargado;
             e.Barco = barco;
@@ -218,19 +219,28 @@ namespace barcobus
             e.Barco = barco;
             e.Tripulante = tripulante;
             e.Operacion = "Asignacion de tripulante";
+            bool chequeo=true;
             if (encargado.Permisos > 0)
-            { bool chequeo=true;
+            { 
             if (db.Barcos.Find(b2 => b2.Nombre == barco.Nombre).Tripulacion.Count >= db.Barcos.Find(b2 => b2.Nombre == barco.Nombre).CapacidadTripulantes) { chequeo = false;
             return 2;
             }
-            if (db.Barcos.Find(b2 => b2.Nombre == barco.Nombre).Tripulacion.Contains(tripulante)) { chequeo = false;
+            if (db.Barcos.Find(b2 => b2.Nombre == barco.Nombre).Tripulacion.Find(t3=>t3.Nombre==tripulante.Nombre)!=null) { chequeo = false;
             return 3;
             }
             if(db.Barcos.Find(b2 => b2.Nombre == barco.Nombre).Tripulacion.FindAll(e2 => e2.Rol == 1).Count>1){
             chequeo=false;
             return 4;
             }
-
+            
+                foreach (barco b22 in db.Barcos)
+                {
+                    if (b22.Tripulacion.Find(t2 => t2.Nombre == tripulante.Nombre) != null)
+                    {
+                        b22.Tripulacion.Remove(b22.Tripulacion.Find(t2 => t2.Nombre == tripulante.Nombre));
+                    }
+                }
+            
 
             if (chequeo == true)
             {
@@ -359,7 +369,8 @@ namespace barcobus
             }
             return table;
         }
-        public DataTable barcoLog(barco b,DateTime d) {
+        public DataTable barcoLog(string b3,DateTime d) {
+            barco b = db.Barcos.Find(b2 => b2.Nombre == b3);
             int mes = d.Month;
             int anio = d.Year;
             DataTable table = new DataTable();
@@ -401,13 +412,7 @@ namespace barcobus
         }
         public List<tripulante> tripulanteList()
         {   List<tripulante> free= db.Tripulantes.ToList<tripulante>();
-        foreach (tripulante item in db.Tripulantes) { 
-            foreach(barco b in db.Barcos){
-            if (b.Tripulacion.Contains(item)){
-                free.Remove(item);
-            }
-            }
-        }
+        
         return free;
         }
         public string CalculateMD5Hash(string input)

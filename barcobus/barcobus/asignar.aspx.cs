@@ -19,11 +19,7 @@ namespace barcobus
             DropDownList1.DataSource = tl;
             if (!IsPostBack)
             {
-               
                 DropDownList2.DataBind();
-
-
-                
                 DropDownList1.DataBind();
             }
 
@@ -41,9 +37,11 @@ namespace barcobus
             }
             else try
                 {
-                    Global.b.asignarTripulante(DropDownList2.SelectedItem.Text, auth, DropDownList1.SelectedItem.Text);
+                    int result=Global.b.asignarTripulante(DropDownList2.SelectedItem.Text, auth, DropDownList1.SelectedItem.Text);
                     label.Text = "Asignado " + DropDownList1.SelectedItem.Text +" al barco "+ DropDownList2.SelectedItem.Text + "!";
-
+                    if (result == 2) { label.Text = "Tripulacion llena."; }
+                    if (result == 3) { label.Text = "Ya es tripulante."; }
+                    if (result == 4) {label.Text = "Demasiados capitanes."; }
                 }
                 catch { }
         }

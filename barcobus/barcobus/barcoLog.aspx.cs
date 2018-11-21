@@ -14,16 +14,16 @@ namespace barcobus
         {
             bl = Global.b.barcoList();
             DropDownList1.DataSource = bl;
-            if(!IsPostBack)
+            if(!IsPostBack){ 
             DropDownList1.DataBind();
-            DropDownList1.SelectedIndex = 0;
+            DropDownList1.SelectedIndex = 0;}
 
         }
 
         protected void Calendar1_SelectionChanged(object sender, EventArgs e)
         {
 
-            GridView1.DataSource = Global.b.barcoLog(bl[DropDownList1.SelectedIndex], Calendar1.SelectedDate);
+            GridView1.DataSource = Global.b.barcoLog(DropDownList1.SelectedItem.Text, Calendar1.SelectedDate);
             GridView1.DataBind();
         }
 

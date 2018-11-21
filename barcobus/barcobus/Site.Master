@@ -37,7 +37,8 @@
                             <asp:MenuItem NavigateUrl="~/RegistroBarcos.aspx" Text="CREAR" Value="CREAR">
                             </asp:MenuItem>
                             <asp:MenuItem Text="ALTA" Value="ALTA">
-                                <asp:MenuItem Text="REPARACION" Value="REPARACION"></asp:MenuItem>
+                                <asp:MenuItem Text="REPARACION" Value="REPARACION" 
+                                    NavigateUrl="~/altaReparacion.aspx"></asp:MenuItem>
                                 <asp:MenuItem Text="MANTENIMIENTO" Value="MANTENIMIENTO"></asp:MenuItem>
                             </asp:MenuItem>
                             <asp:MenuItem Text="TRIPULACION" Value="TRIPULACION"></asp:MenuItem>
@@ -49,6 +50,8 @@
                             Value="TRIPULANTE">
                             <asp:MenuItem NavigateUrl="~/RegistroTripulante.aspx" Text="CREAR" 
                                 Value="CREAR"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/asignar.aspx" Text="ASIGNAR" Value="ASIGNAR">
+                            </asp:MenuItem>
                         </asp:MenuItem>
                         <asp:MenuItem Text="EMPRESA" Value="EMPRESA">
                             <asp:MenuItem Text="ENCARGADO" Value="ENCARGADO">

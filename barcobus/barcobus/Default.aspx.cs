@@ -18,9 +18,14 @@ namespace barcobus
             {
                 Panel1.Visible = true;
             }
-            else if (Session["auth"]==null) {
+            else if (Session["auth"] == null)
+            {
 
                 Panel2.Visible = true;
+            }
+            else
+            {encargado auth = (encargado)Session["auth"];
+            Label2.Text = "Hola " + auth.Nombre + "!";
             }
             
          }

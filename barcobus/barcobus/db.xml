@@ -1,86 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <barcobus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Barcos>
-    <barco xsi:type="barcoRapido">
-      <Nombre>barcorapido</Nombre>
-      <CapacidadPasajeros>11112</CapacidadPasajeros>
-      <CapacidadTripulantes>11</CapacidadTripulantes>
-      <LogMantenimientos />
-      <LogReparaciones />
-      <Tripulacion>
-        <tripulante>
-          <Nombre>admin</Nombre>
-          <Ci>1111</Ci>
-          <Rol>3</Rol>
-          <FechaIngreso>0001-01-01T00:00:00</FechaIngreso>
-        </tripulante>
-        <tripulante>
-          <Nombre>admin</Nombre>
-          <Ci>1111</Ci>
-          <Rol>3</Rol>
-          <FechaIngreso>0001-01-01T00:00:00</FechaIngreso>
-        </tripulante>
-        <tripulante>
-          <Nombre>admin</Nombre>
-          <Ci>1111</Ci>
-          <Rol>3</Rol>
-          <FechaIngreso>0001-01-01T00:00:00</FechaIngreso>
-        </tripulante>
-        <tripulante>
-          <Nombre>admin</Nombre>
-          <Ci>1111</Ci>
-          <Rol>3</Rol>
-          <FechaIngreso>0001-01-01T00:00:00</FechaIngreso>
-        </tripulante>
-        <tripulante>
-          <Nombre>admin</Nombre>
-          <Ci>1111</Ci>
-          <Rol>3</Rol>
-          <FechaIngreso>0001-01-01T00:00:00</FechaIngreso>
-        </tripulante>
-        <tripulante>
-          <Nombre>admin</Nombre>
-          <Ci>1111</Ci>
-          <Rol>3</Rol>
-          <FechaIngreso>0001-01-01T00:00:00</FechaIngreso>
-        </tripulante>
-      </Tripulacion>
-      <VelocidadMax>200</VelocidadMax>
-    </barco>
     <barco xsi:type="barcoLento">
-      <Nombre>dasd</Nombre>
-      <CapacidadPasajeros>1111</CapacidadPasajeros>
-      <CapacidadTripulantes>1</CapacidadTripulantes>
+      <Nombre>BL1</Nombre>
+      <CapacidadPasajeros>10</CapacidadPasajeros>
+      <CapacidadTripulantes>2</CapacidadTripulantes>
       <LogMantenimientos />
       <LogReparaciones />
       <Tripulacion>
         <tripulante>
-          <Nombre>carlitos</Nombre>
-          <Ci>1111</Ci>
-          <Rol>3</Rol>
+          <Nombre>Gabriel</Nombre>
+          <Ci>1003</Ci>
+          <Rol>2</Rol>
           <FechaIngreso>0001-01-01T00:00:00</FechaIngreso>
         </tripulante>
       </Tripulacion>
-      <CapacidadBodega>200</CapacidadBodega>
+      <CapacidadBodega>10</CapacidadBodega>
+    </barco>
+    <barco xsi:type="barcoRapido">
+      <Nombre>BR1</Nombre>
+      <CapacidadPasajeros>10</CapacidadPasajeros>
+      <CapacidadTripulantes>2</CapacidadTripulantes>
+      <LogMantenimientos />
+      <LogReparaciones>
+        <registroReparacion>
+          <Timestamp>2018-11-21T22:52:48.7122078Z</Timestamp>
+          <Reparacion>carlitos</Reparacion>
+          <Descripcion>1111A</Descripcion>
+          <Encargado>
+            <Nombre>admin</Nombre>
+            <Ci>47361944</Ci>
+            <PersonasACargo>0</PersonasACargo>
+            <Permisos>3</Permisos>
+            <Password>21232F297A57A5A743894A0E4A801FC3</Password>
+          </Encargado>
+        </registroReparacion>
+      </LogReparaciones>
+      <Tripulacion>
+        <tripulante>
+          <Nombre>Joaquin</Nombre>
+          <Ci>1001</Ci>
+          <Rol>1</Rol>
+          <FechaIngreso>0001-01-01T00:00:00</FechaIngreso>
+        </tripulante>
+      </Tripulacion>
+      <VelocidadMax>10</VelocidadMax>
     </barco>
   </Barcos>
   <Tripulantes>
     <tripulante>
-      <Nombre>admin</Nombre>
-      <Ci>1111</Ci>
-      <Rol>3</Rol>
+      <Nombre>Emilio</Nombre>
+      <Ci>12345</Ci>
+      <Rol>1</Rol>
       <FechaIngreso>0001-01-01T00:00:00</FechaIngreso>
     </tripulante>
     <tripulante>
-      <Nombre>admin</Nombre>
-      <Ci>1111</Ci>
-      <Rol>3</Rol>
+      <Nombre>Joaquin</Nombre>
+      <Ci>1001</Ci>
+      <Rol>1</Rol>
       <FechaIngreso>0001-01-01T00:00:00</FechaIngreso>
     </tripulante>
     <tripulante>
-      <Nombre>carlitos</Nombre>
-      <Ci>1111</Ci>
-      <Rol>3</Rol>
+      <Nombre>Gabriel</Nombre>
+      <Ci>1003</Ci>
+      <Rol>2</Rol>
+      <FechaIngreso>0001-01-01T00:00:00</FechaIngreso>
+    </tripulante>
+    <tripulante>
+      <Nombre>Pedro</Nombre>
+      <Ci>1002</Ci>
+      <Rol>2</Rol>
       <FechaIngreso>0001-01-01T00:00:00</FechaIngreso>
     </tripulante>
   </Tripulantes>
@@ -92,25 +81,12 @@
       <Permisos>3</Permisos>
       <Password>21232F297A57A5A743894A0E4A801FC3</Password>
     </encargado>
-    <encargado>
-      <Nombre>admin2</Nombre>
-      <Ci>12345</Ci>
-      <PersonasACargo>0</PersonasACargo>
-      <Permisos>3</Permisos>
-    </encargado>
-    <encargado>
-      <Nombre>emilio</Nombre>
-      <Ci>1111</Ci>
-      <PersonasACargo>12</PersonasACargo>
-      <Permisos>1</Permisos>
-      <Password>62F41279FDE8210BA91F8A6712A8CE4A</Password>
-    </encargado>
   </Encargados>
   <Mantenimientos>
     <mantenimiento>
-      <Codigo>3</Codigo>
-      <PrecioBase>12</PrecioBase>
-      <Descripcion>dsad</Descripcion>
+      <Codigo>1</Codigo>
+      <PrecioBase>5</PrecioBase>
+      <Descripcion>Cambio de aceite</Descripcion>
     </mantenimiento>
   </Mantenimientos>
   <Log>
@@ -132,7 +108,16 @@
         <Permisos>3</Permisos>
         <Password>21232F297A57A5A743894A0E4A801FC3</Password>
       </Encargado>
-      <Operacion>Creacion de encargado: admin2</Operacion>
+      <Barco xsi:type="barcoLento">
+        <Nombre>BL1</Nombre>
+        <CapacidadPasajeros>10</CapacidadPasajeros>
+        <CapacidadTripulantes>2</CapacidadTripulantes>
+        <LogMantenimientos />
+        <LogReparaciones />
+        <Tripulacion />
+        <CapacidadBodega>10</CapacidadBodega>
+      </Barco>
+      <Operacion>Creacion de barco</Operacion>
     </logItem>
     <logItem>
       <Encargado>
@@ -142,7 +127,36 @@
         <Permisos>3</Permisos>
         <Password>21232F297A57A5A743894A0E4A801FC3</Password>
       </Encargado>
-      <Operacion>Creacion de encargado: emilio</Operacion>
+      <Barco xsi:type="barcoRapido">
+        <Nombre>BR1</Nombre>
+        <CapacidadPasajeros>10</CapacidadPasajeros>
+        <CapacidadTripulantes>2</CapacidadTripulantes>
+        <LogMantenimientos />
+        <LogReparaciones />
+        <Tripulacion />
+        <VelocidadMax>10</VelocidadMax>
+      </Barco>
+      <Operacion>Creacion de barco</Operacion>
+    </logItem>
+    <logItem>
+      <Encargado>
+        <Nombre>admin</Nombre>
+        <Ci>47361944</Ci>
+        <PersonasACargo>0</PersonasACargo>
+        <Permisos>3</Permisos>
+        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
+      </Encargado>
+      <Operacion>Creacion de tripulante</Operacion>
+    </logItem>
+    <logItem>
+      <Encargado>
+        <Nombre>admin</Nombre>
+        <Ci>47361944</Ci>
+        <PersonasACargo>0</PersonasACargo>
+        <Permisos>3</Permisos>
+        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
+      </Encargado>
+      <Operacion>Ingreso.</Operacion>
     </logItem>
     <logItem>
       <Encargado>
@@ -163,6 +177,286 @@
         <Password>21232F297A57A5A743894A0E4A801FC3</Password>
       </Encargado>
       <Operacion>Creacion de tripulante</Operacion>
+    </logItem>
+    <logItem>
+      <Encargado>
+        <Nombre>admin</Nombre>
+        <Ci>47361944</Ci>
+        <PersonasACargo>0</PersonasACargo>
+        <Permisos>3</Permisos>
+        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
+      </Encargado>
+      <Operacion>Creacion de tripulante</Operacion>
+    </logItem>
+    <logItem>
+      <Encargado>
+        <Nombre>admin</Nombre>
+        <Ci>47361944</Ci>
+        <PersonasACargo>0</PersonasACargo>
+        <Permisos>3</Permisos>
+        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
+      </Encargado>
+      <Operacion>Ingreso.</Operacion>
+    </logItem>
+    <logItem>
+      <Encargado>
+        <Nombre>admin</Nombre>
+        <Ci>47361944</Ci>
+        <PersonasACargo>0</PersonasACargo>
+        <Permisos>3</Permisos>
+        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
+      </Encargado>
+      <Barco xsi:type="barcoLento">
+        <Nombre>BL1</Nombre>
+        <CapacidadPasajeros>10</CapacidadPasajeros>
+        <CapacidadTripulantes>2</CapacidadTripulantes>
+        <LogMantenimientos />
+        <LogReparaciones />
+        <Tripulacion>
+          <tripulante>
+            <Nombre>Gabriel</Nombre>
+            <Ci>1003</Ci>
+            <Rol>2</Rol>
+            <FechaIngreso>0001-01-01T00:00:00</FechaIngreso>
+          </tripulante>
+        </Tripulacion>
+        <CapacidadBodega>10</CapacidadBodega>
+      </Barco>
+      <Operacion>Asignacion de tripulante</Operacion>
+    </logItem>
+    <logItem>
+      <Encargado>
+        <Nombre>admin</Nombre>
+        <Ci>47361944</Ci>
+        <PersonasACargo>0</PersonasACargo>
+        <Permisos>3</Permisos>
+        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
+      </Encargado>
+      <Barco xsi:type="barcoRapido">
+        <Nombre>BR1</Nombre>
+        <CapacidadPasajeros>10</CapacidadPasajeros>
+        <CapacidadTripulantes>2</CapacidadTripulantes>
+        <LogMantenimientos />
+        <LogReparaciones />
+        <Tripulacion>
+          <tripulante>
+            <Nombre>Joaquin</Nombre>
+            <Ci>1001</Ci>
+            <Rol>1</Rol>
+            <FechaIngreso>0001-01-01T00:00:00</FechaIngreso>
+          </tripulante>
+        </Tripulacion>
+        <VelocidadMax>10</VelocidadMax>
+      </Barco>
+      <Operacion>Asignacion de tripulante</Operacion>
+    </logItem>
+    <logItem>
+      <Encargado>
+        <Nombre>admin</Nombre>
+        <Ci>47361944</Ci>
+        <PersonasACargo>0</PersonasACargo>
+        <Permisos>3</Permisos>
+        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
+      </Encargado>
+      <Operacion>Ingreso.</Operacion>
+    </logItem>
+    <logItem>
+      <Encargado>
+        <Nombre>admin</Nombre>
+        <Ci>47361944</Ci>
+        <PersonasACargo>0</PersonasACargo>
+        <Permisos>3</Permisos>
+        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
+      </Encargado>
+      <Barco xsi:type="barcoLento">
+        <Nombre>BL1</Nombre>
+        <CapacidadPasajeros>10</CapacidadPasajeros>
+        <CapacidadTripulantes>2</CapacidadTripulantes>
+        <LogMantenimientos />
+        <LogReparaciones />
+        <Tripulacion>
+          <tripulante>
+            <Nombre>Gabriel</Nombre>
+            <Ci>1003</Ci>
+            <Rol>2</Rol>
+            <FechaIngreso>0001-01-01T00:00:00</FechaIngreso>
+          </tripulante>
+          <tripulante>
+            <Nombre>Gabriel</Nombre>
+            <Ci>1003</Ci>
+            <Rol>2</Rol>
+            <FechaIngreso>0001-01-01T00:00:00</FechaIngreso>
+          </tripulante>
+        </Tripulacion>
+        <CapacidadBodega>10</CapacidadBodega>
+      </Barco>
+      <Operacion>Asignacion de tripulante</Operacion>
+    </logItem>
+    <logItem>
+      <Encargado>
+        <Nombre>admin</Nombre>
+        <Ci>47361944</Ci>
+        <PersonasACargo>0</PersonasACargo>
+        <Permisos>3</Permisos>
+        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
+      </Encargado>
+      <Operacion>Ingreso.</Operacion>
+    </logItem>
+    <logItem>
+      <Encargado>
+        <Nombre>admin</Nombre>
+        <Ci>47361944</Ci>
+        <PersonasACargo>0</PersonasACargo>
+        <Permisos>3</Permisos>
+        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
+      </Encargado>
+      <Barco xsi:type="barcoLento">
+        <Nombre>BL1</Nombre>
+        <CapacidadPasajeros>10</CapacidadPasajeros>
+        <CapacidadTripulantes>2</CapacidadTripulantes>
+        <LogMantenimientos />
+        <LogReparaciones />
+        <Tripulacion>
+          <tripulante>
+            <Nombre>Gabriel</Nombre>
+            <Ci>1003</Ci>
+            <Rol>2</Rol>
+            <FechaIngreso>0001-01-01T00:00:00</FechaIngreso>
+          </tripulante>
+          <tripulante>
+            <Nombre>Joaquin</Nombre>
+            <Ci>1001</Ci>
+            <Rol>1</Rol>
+            <FechaIngreso>0001-01-01T00:00:00</FechaIngreso>
+          </tripulante>
+        </Tripulacion>
+        <CapacidadBodega>10</CapacidadBodega>
+      </Barco>
+      <Operacion>Asignacion de tripulante</Operacion>
+    </logItem>
+    <logItem>
+      <Encargado>
+        <Nombre>admin</Nombre>
+        <Ci>47361944</Ci>
+        <PersonasACargo>0</PersonasACargo>
+        <Permisos>3</Permisos>
+        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
+      </Encargado>
+      <Operacion>Ingreso.</Operacion>
+    </logItem>
+    <logItem>
+      <Encargado>
+        <Nombre>admin</Nombre>
+        <Ci>47361944</Ci>
+        <PersonasACargo>0</PersonasACargo>
+        <Permisos>3</Permisos>
+        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
+      </Encargado>
+      <Barco xsi:type="barcoRapido">
+        <Nombre>BR1</Nombre>
+        <CapacidadPasajeros>10</CapacidadPasajeros>
+        <CapacidadTripulantes>2</CapacidadTripulantes>
+        <LogMantenimientos />
+        <LogReparaciones />
+        <Tripulacion>
+          <tripulante>
+            <Nombre>Joaquin</Nombre>
+            <Ci>1001</Ci>
+            <Rol>1</Rol>
+            <FechaIngreso>0001-01-01T00:00:00</FechaIngreso>
+          </tripulante>
+        </Tripulacion>
+        <VelocidadMax>10</VelocidadMax>
+      </Barco>
+      <Operacion>Asignacion de tripulante</Operacion>
+    </logItem>
+    <logItem>
+      <Encargado>
+        <Nombre>admin</Nombre>
+        <Ci>47361944</Ci>
+        <PersonasACargo>0</PersonasACargo>
+        <Permisos>3</Permisos>
+        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
+      </Encargado>
+      <Operacion>Ingreso.</Operacion>
+    </logItem>
+    <logItem>
+      <Encargado>
+        <Nombre>admin</Nombre>
+        <Ci>47361944</Ci>
+        <PersonasACargo>0</PersonasACargo>
+        <Permisos>3</Permisos>
+        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
+      </Encargado>
+      <Barco xsi:type="barcoRapido">
+        <Nombre>BR1</Nombre>
+        <CapacidadPasajeros>10</CapacidadPasajeros>
+        <CapacidadTripulantes>2</CapacidadTripulantes>
+        <LogMantenimientos />
+        <LogReparaciones />
+        <Tripulacion>
+          <tripulante>
+            <Nombre>Joaquin</Nombre>
+            <Ci>1001</Ci>
+            <Rol>1</Rol>
+            <FechaIngreso>0001-01-01T00:00:00</FechaIngreso>
+          </tripulante>
+        </Tripulacion>
+        <VelocidadMax>10</VelocidadMax>
+      </Barco>
+      <Operacion>Asignacion de tripulante</Operacion>
+    </logItem>
+    <logItem>
+      <Encargado>
+        <Nombre>admin</Nombre>
+        <Ci>47361944</Ci>
+        <PersonasACargo>0</PersonasACargo>
+        <Permisos>3</Permisos>
+        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
+      </Encargado>
+      <Barco xsi:type="barcoLento">
+        <Nombre>BL1</Nombre>
+        <CapacidadPasajeros>10</CapacidadPasajeros>
+        <CapacidadTripulantes>2</CapacidadTripulantes>
+        <LogMantenimientos />
+        <LogReparaciones />
+        <Tripulacion>
+          <tripulante>
+            <Nombre>Gabriel</Nombre>
+            <Ci>1003</Ci>
+            <Rol>2</Rol>
+            <FechaIngreso>0001-01-01T00:00:00</FechaIngreso>
+          </tripulante>
+        </Tripulacion>
+        <CapacidadBodega>10</CapacidadBodega>
+      </Barco>
+      <Operacion>Asignacion de tripulante</Operacion>
+    </logItem>
+    <logItem>
+      <Encargado>
+        <Nombre>admin</Nombre>
+        <Ci>47361944</Ci>
+        <PersonasACargo>0</PersonasACargo>
+        <Permisos>3</Permisos>
+        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
+      </Encargado>
+      <Barco xsi:type="barcoRapido">
+        <Nombre>BR1</Nombre>
+        <CapacidadPasajeros>10</CapacidadPasajeros>
+        <CapacidadTripulantes>2</CapacidadTripulantes>
+        <LogMantenimientos />
+        <LogReparaciones />
+        <Tripulacion>
+          <tripulante>
+            <Nombre>Joaquin</Nombre>
+            <Ci>1001</Ci>
+            <Rol>1</Rol>
+            <FechaIngreso>0001-01-01T00:00:00</FechaIngreso>
+          </tripulante>
+        </Tripulacion>
+        <VelocidadMax>10</VelocidadMax>
+      </Barco>
+      <Operacion>Asignacion de tripulante</Operacion>
     </logItem>
     <logItem>
       <Encargado>
@@ -173,9 +467,9 @@
         <Password>21232F297A57A5A743894A0E4A801FC3</Password>
       </Encargado>
       <Mantenimiento>
-        <Codigo>3</Codigo>
-        <PrecioBase>12</PrecioBase>
-        <Descripcion>dsad</Descripcion>
+        <Codigo>1</Codigo>
+        <PrecioBase>5</PrecioBase>
+        <Descripcion>Cambio de aceite</Descripcion>
       </Mantenimiento>
       <Operacion>Creacion de mantenimiento</Operacion>
     </logItem>
@@ -198,396 +492,47 @@
         <Password>21232F297A57A5A743894A0E4A801FC3</Password>
       </Encargado>
       <Barco xsi:type="barcoRapido">
-        <Nombre>barcorapido</Nombre>
-        <CapacidadPasajeros>11112</CapacidadPasajeros>
-        <CapacidadTripulantes>11</CapacidadTripulantes>
+        <Nombre>BR1</Nombre>
+        <CapacidadPasajeros>10</CapacidadPasajeros>
+        <CapacidadTripulantes>2</CapacidadTripulantes>
         <LogMantenimientos />
-        <LogReparaciones />
-        <Tripulacion />
-        <VelocidadMax>200</VelocidadMax>
-      </Barco>
-      <Operacion>Creacion de barco</Operacion>
-    </logItem>
-    <logItem>
-      <Encargado>
-        <Nombre>admin</Nombre>
-        <Ci>47361944</Ci>
-        <PersonasACargo>0</PersonasACargo>
-        <Permisos>3</Permisos>
-        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
-      </Encargado>
-      <Operacion>Ingreso.</Operacion>
-    </logItem>
-    <logItem>
-      <Encargado>
-        <Nombre>admin</Nombre>
-        <Ci>47361944</Ci>
-        <PersonasACargo>0</PersonasACargo>
-        <Permisos>3</Permisos>
-        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
-      </Encargado>
-      <Barco xsi:type="barcoLento">
-        <Nombre>dasd</Nombre>
-        <CapacidadPasajeros>1111</CapacidadPasajeros>
-        <CapacidadTripulantes>1</CapacidadTripulantes>
-        <LogMantenimientos />
-        <LogReparaciones />
-        <Tripulacion />
-        <CapacidadBodega>200</CapacidadBodega>
-      </Barco>
-      <Operacion>Creacion de barco</Operacion>
-    </logItem>
-    <logItem>
-      <Encargado>
-        <Nombre>admin</Nombre>
-        <Ci>47361944</Ci>
-        <PersonasACargo>0</PersonasACargo>
-        <Permisos>3</Permisos>
-        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
-      </Encargado>
-      <Operacion>Ingreso.</Operacion>
-    </logItem>
-    <logItem>
-      <Encargado>
-        <Nombre>admin</Nombre>
-        <Ci>47361944</Ci>
-        <PersonasACargo>0</PersonasACargo>
-        <Permisos>3</Permisos>
-        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
-      </Encargado>
-      <Operacion>Creacion de tripulante</Operacion>
-    </logItem>
-    <logItem>
-      <Encargado>
-        <Nombre>admin</Nombre>
-        <Ci>47361944</Ci>
-        <PersonasACargo>0</PersonasACargo>
-        <Permisos>3</Permisos>
-        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
-      </Encargado>
-      <Barco xsi:type="barcoRapido">
-        <Nombre>barcorapido</Nombre>
-        <CapacidadPasajeros>11112</CapacidadPasajeros>
-        <CapacidadTripulantes>11</CapacidadTripulantes>
-        <LogMantenimientos />
-        <LogReparaciones />
+        <LogReparaciones>
+          <registroReparacion>
+            <Timestamp>2018-11-21T22:52:48.7122078Z</Timestamp>
+            <Reparacion>carlitos</Reparacion>
+            <Descripcion>1111A</Descripcion>
+            <Encargado>
+              <Nombre>admin</Nombre>
+              <Ci>47361944</Ci>
+              <PersonasACargo>0</PersonasACargo>
+              <Permisos>3</Permisos>
+              <Password>21232F297A57A5A743894A0E4A801FC3</Password>
+            </Encargado>
+          </registroReparacion>
+        </LogReparaciones>
         <Tripulacion>
           <tripulante>
-            <Nombre>admin</Nombre>
-            <Ci>1111</Ci>
-            <Rol>3</Rol>
+            <Nombre>Joaquin</Nombre>
+            <Ci>1001</Ci>
+            <Rol>1</Rol>
             <FechaIngreso>0001-01-01T00:00:00</FechaIngreso>
           </tripulante>
         </Tripulacion>
-        <VelocidadMax>200</VelocidadMax>
+        <VelocidadMax>10</VelocidadMax>
       </Barco>
-      <Operacion>Asignacion de tripulante</Operacion>
-    </logItem>
-    <logItem>
-      <Encargado>
-        <Nombre>admin</Nombre>
-        <Ci>47361944</Ci>
-        <PersonasACargo>0</PersonasACargo>
-        <Permisos>3</Permisos>
-        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
-      </Encargado>
-      <Operacion>Ingreso.</Operacion>
-    </logItem>
-    <logItem>
-      <Encargado>
-        <Nombre>admin</Nombre>
-        <Ci>47361944</Ci>
-        <PersonasACargo>0</PersonasACargo>
-        <Permisos>3</Permisos>
-        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
-      </Encargado>
-      <Barco xsi:type="barcoRapido">
-        <Nombre>barcorapido</Nombre>
-        <CapacidadPasajeros>11112</CapacidadPasajeros>
-        <CapacidadTripulantes>11</CapacidadTripulantes>
-        <LogMantenimientos />
-        <LogReparaciones />
-        <Tripulacion>
-          <tripulante>
-            <Nombre>admin</Nombre>
-            <Ci>1111</Ci>
-            <Rol>3</Rol>
-            <FechaIngreso>0001-01-01T00:00:00</FechaIngreso>
-          </tripulante>
-          <tripulante>
-            <Nombre>admin</Nombre>
-            <Ci>1111</Ci>
-            <Rol>3</Rol>
-            <FechaIngreso>0001-01-01T00:00:00</FechaIngreso>
-          </tripulante>
-        </Tripulacion>
-        <VelocidadMax>200</VelocidadMax>
-      </Barco>
-      <Operacion>Asignacion de tripulante</Operacion>
-    </logItem>
-    <logItem>
-      <Encargado>
-        <Nombre>admin</Nombre>
-        <Ci>47361944</Ci>
-        <PersonasACargo>0</PersonasACargo>
-        <Permisos>3</Permisos>
-        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
-      </Encargado>
-      <Operacion>Ingreso.</Operacion>
-    </logItem>
-    <logItem>
-      <Encargado>
-        <Nombre>admin</Nombre>
-        <Ci>47361944</Ci>
-        <PersonasACargo>0</PersonasACargo>
-        <Permisos>3</Permisos>
-        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
-      </Encargado>
-      <Barco xsi:type="barcoRapido">
-        <Nombre>barcorapido</Nombre>
-        <CapacidadPasajeros>11112</CapacidadPasajeros>
-        <CapacidadTripulantes>11</CapacidadTripulantes>
-        <LogMantenimientos />
-        <LogReparaciones />
-        <Tripulacion>
-          <tripulante>
-            <Nombre>admin</Nombre>
-            <Ci>1111</Ci>
-            <Rol>3</Rol>
-            <FechaIngreso>0001-01-01T00:00:00</FechaIngreso>
-          </tripulante>
-          <tripulante>
-            <Nombre>admin</Nombre>
-            <Ci>1111</Ci>
-            <Rol>3</Rol>
-            <FechaIngreso>0001-01-01T00:00:00</FechaIngreso>
-          </tripulante>
-          <tripulante>
-            <Nombre>admin</Nombre>
-            <Ci>1111</Ci>
-            <Rol>3</Rol>
-            <FechaIngreso>0001-01-01T00:00:00</FechaIngreso>
-          </tripulante>
-        </Tripulacion>
-        <VelocidadMax>200</VelocidadMax>
-      </Barco>
-      <Operacion>Asignacion de tripulante</Operacion>
-    </logItem>
-    <logItem>
-      <Encargado>
-        <Nombre>admin</Nombre>
-        <Ci>47361944</Ci>
-        <PersonasACargo>0</PersonasACargo>
-        <Permisos>3</Permisos>
-        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
-      </Encargado>
-      <Operacion>Ingreso.</Operacion>
-    </logItem>
-    <logItem>
-      <Encargado>
-        <Nombre>admin</Nombre>
-        <Ci>47361944</Ci>
-        <PersonasACargo>0</PersonasACargo>
-        <Permisos>3</Permisos>
-        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
-      </Encargado>
-      <Barco xsi:type="barcoRapido">
-        <Nombre>barcorapido</Nombre>
-        <CapacidadPasajeros>11112</CapacidadPasajeros>
-        <CapacidadTripulantes>11</CapacidadTripulantes>
-        <LogMantenimientos />
-        <LogReparaciones />
-        <Tripulacion>
-          <tripulante>
-            <Nombre>admin</Nombre>
-            <Ci>1111</Ci>
-            <Rol>3</Rol>
-            <FechaIngreso>0001-01-01T00:00:00</FechaIngreso>
-          </tripulante>
-          <tripulante>
-            <Nombre>admin</Nombre>
-            <Ci>1111</Ci>
-            <Rol>3</Rol>
-            <FechaIngreso>0001-01-01T00:00:00</FechaIngreso>
-          </tripulante>
-          <tripulante>
-            <Nombre>admin</Nombre>
-            <Ci>1111</Ci>
-            <Rol>3</Rol>
-            <FechaIngreso>0001-01-01T00:00:00</FechaIngreso>
-          </tripulante>
-          <tripulante>
-            <Nombre>admin</Nombre>
-            <Ci>1111</Ci>
-            <Rol>3</Rol>
-            <FechaIngreso>0001-01-01T00:00:00</FechaIngreso>
-          </tripulante>
-        </Tripulacion>
-        <VelocidadMax>200</VelocidadMax>
-      </Barco>
-      <Operacion>Asignacion de tripulante</Operacion>
-    </logItem>
-    <logItem>
-      <Encargado>
-        <Nombre>admin</Nombre>
-        <Ci>47361944</Ci>
-        <PersonasACargo>0</PersonasACargo>
-        <Permisos>3</Permisos>
-        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
-      </Encargado>
-      <Operacion>Ingreso.</Operacion>
-    </logItem>
-    <logItem>
-      <Encargado>
-        <Nombre>admin</Nombre>
-        <Ci>47361944</Ci>
-        <PersonasACargo>0</PersonasACargo>
-        <Permisos>3</Permisos>
-        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
-      </Encargado>
-      <Barco xsi:type="barcoRapido">
-        <Nombre>barcorapido</Nombre>
-        <CapacidadPasajeros>11112</CapacidadPasajeros>
-        <CapacidadTripulantes>11</CapacidadTripulantes>
-        <LogMantenimientos />
-        <LogReparaciones />
-        <Tripulacion>
-          <tripulante>
-            <Nombre>admin</Nombre>
-            <Ci>1111</Ci>
-            <Rol>3</Rol>
-            <FechaIngreso>0001-01-01T00:00:00</FechaIngreso>
-          </tripulante>
-          <tripulante>
-            <Nombre>admin</Nombre>
-            <Ci>1111</Ci>
-            <Rol>3</Rol>
-            <FechaIngreso>0001-01-01T00:00:00</FechaIngreso>
-          </tripulante>
-          <tripulante>
-            <Nombre>admin</Nombre>
-            <Ci>1111</Ci>
-            <Rol>3</Rol>
-            <FechaIngreso>0001-01-01T00:00:00</FechaIngreso>
-          </tripulante>
-          <tripulante>
-            <Nombre>admin</Nombre>
-            <Ci>1111</Ci>
-            <Rol>3</Rol>
-            <FechaIngreso>0001-01-01T00:00:00</FechaIngreso>
-          </tripulante>
-          <tripulante>
-            <Nombre>admin</Nombre>
-            <Ci>1111</Ci>
-            <Rol>3</Rol>
-            <FechaIngreso>0001-01-01T00:00:00</FechaIngreso>
-          </tripulante>
-        </Tripulacion>
-        <VelocidadMax>200</VelocidadMax>
-      </Barco>
-      <Operacion>Asignacion de tripulante</Operacion>
-    </logItem>
-    <logItem>
-      <Encargado>
-        <Nombre>admin</Nombre>
-        <Ci>47361944</Ci>
-        <PersonasACargo>0</PersonasACargo>
-        <Permisos>3</Permisos>
-        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
-      </Encargado>
-      <Operacion>Ingreso.</Operacion>
-    </logItem>
-    <logItem>
-      <Encargado>
-        <Nombre>admin</Nombre>
-        <Ci>47361944</Ci>
-        <PersonasACargo>0</PersonasACargo>
-        <Permisos>3</Permisos>
-        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
-      </Encargado>
-      <Barco xsi:type="barcoRapido">
-        <Nombre>barcorapido</Nombre>
-        <CapacidadPasajeros>11112</CapacidadPasajeros>
-        <CapacidadTripulantes>11</CapacidadTripulantes>
-        <LogMantenimientos />
-        <LogReparaciones />
-        <Tripulacion>
-          <tripulante>
-            <Nombre>admin</Nombre>
-            <Ci>1111</Ci>
-            <Rol>3</Rol>
-            <FechaIngreso>0001-01-01T00:00:00</FechaIngreso>
-          </tripulante>
-          <tripulante>
-            <Nombre>admin</Nombre>
-            <Ci>1111</Ci>
-            <Rol>3</Rol>
-            <FechaIngreso>0001-01-01T00:00:00</FechaIngreso>
-          </tripulante>
-          <tripulante>
-            <Nombre>admin</Nombre>
-            <Ci>1111</Ci>
-            <Rol>3</Rol>
-            <FechaIngreso>0001-01-01T00:00:00</FechaIngreso>
-          </tripulante>
-          <tripulante>
-            <Nombre>admin</Nombre>
-            <Ci>1111</Ci>
-            <Rol>3</Rol>
-            <FechaIngreso>0001-01-01T00:00:00</FechaIngreso>
-          </tripulante>
-          <tripulante>
-            <Nombre>admin</Nombre>
-            <Ci>1111</Ci>
-            <Rol>3</Rol>
-            <FechaIngreso>0001-01-01T00:00:00</FechaIngreso>
-          </tripulante>
-          <tripulante>
-            <Nombre>admin</Nombre>
-            <Ci>1111</Ci>
-            <Rol>3</Rol>
-            <FechaIngreso>0001-01-01T00:00:00</FechaIngreso>
-          </tripulante>
-        </Tripulacion>
-        <VelocidadMax>200</VelocidadMax>
-      </Barco>
-      <Operacion>Asignacion de tripulante</Operacion>
-    </logItem>
-    <logItem>
-      <Encargado>
-        <Nombre>admin</Nombre>
-        <Ci>47361944</Ci>
-        <PersonasACargo>0</PersonasACargo>
-        <Permisos>3</Permisos>
-        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
-      </Encargado>
-      <Operacion>Ingreso.</Operacion>
-    </logItem>
-    <logItem>
-      <Encargado>
-        <Nombre>admin</Nombre>
-        <Ci>47361944</Ci>
-        <PersonasACargo>0</PersonasACargo>
-        <Permisos>3</Permisos>
-        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
-      </Encargado>
-      <Barco xsi:type="barcoLento">
-        <Nombre>dasd</Nombre>
-        <CapacidadPasajeros>1111</CapacidadPasajeros>
-        <CapacidadTripulantes>1</CapacidadTripulantes>
-        <LogMantenimientos />
-        <LogReparaciones />
-        <Tripulacion>
-          <tripulante>
-            <Nombre>carlitos</Nombre>
-            <Ci>1111</Ci>
-            <Rol>3</Rol>
-            <FechaIngreso>0001-01-01T00:00:00</FechaIngreso>
-          </tripulante>
-        </Tripulacion>
-        <CapacidadBodega>200</CapacidadBodega>
-      </Barco>
-      <Operacion>Asignacion de tripulante</Operacion>
+      <registroReparacion>
+        <Timestamp>2018-11-21T22:52:48.7122078Z</Timestamp>
+        <Reparacion>carlitos</Reparacion>
+        <Descripcion>1111A</Descripcion>
+        <Encargado>
+          <Nombre>admin</Nombre>
+          <Ci>47361944</Ci>
+          <PersonasACargo>0</PersonasACargo>
+          <Permisos>3</Permisos>
+          <Password>21232F297A57A5A743894A0E4A801FC3</Password>
+        </Encargado>
+      </registroReparacion>
+      <Operacion>Alta de reparacion</Operacion>
     </logItem>
   </Log>
 </barcobus>

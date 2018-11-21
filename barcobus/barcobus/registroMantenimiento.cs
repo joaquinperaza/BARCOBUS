@@ -39,6 +39,10 @@ namespace barcobus
             get { return costo; }
             set { costo = value; }
         }
+        public registroMantenimiento()
+        {
+            timestamp = DateTime.UtcNow;
+        }
 
     }
 }

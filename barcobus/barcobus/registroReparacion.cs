@@ -32,5 +32,10 @@ namespace barcobus
             get { return e; }
             set { e = value; }
         }
+        public registroReparacion()
+        {
+            timestamp = DateTime.UtcNow;
+        }
+
     }
 }
