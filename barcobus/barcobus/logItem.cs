@@ -55,7 +55,7 @@ namespace barcobus
             get { return rr; }
             set { rr = value; }
         }
-        private String operacion;
+        private String operacion="";
 
         public String Operacion
         {
@@ -63,7 +63,20 @@ namespace barcobus
             set { operacion = value; }
         }
         public override String ToString() {
-            String s = "Excepcion de acceso no autorizado: \n Usuario: "+Encargado.Nombre+" sobre los elementos \n Barco: "+Barco.Nombre+"\n Tripulante: "+Tripulante.Nombre+"\n Mantenimiento: "+Mantenimiento.Descripcion+" \n RegistroReparacion: "+registroReparacion.Descripcion+"\n RegistroMantenimeinto: "+registroMantenimiento.Mantenimiento.Descripcion+"\n OPERACION DENEGADA: "+operacion;
+            String s = "Excepcion de acceso no autorizado: \n";
+            try {s+="Usuario: "+Encargado.Nombre;}catch {}
+            try {s+="\n sobre los elementos \n";}catch {}
+            try { s += "Barco: " + Barco.Nombre; }
+            catch { }
+            try { s += "\n Tripulante: " + Tripulante.Nombre; }catch { }
+            try { s += "\n Mantenimiento: " + Mantenimiento.Descripcion; }
+            catch { }
+            try { s += " \n RegistroReparacion: " + registroReparacion.Descripcion; }
+            catch { }
+            try { s += "\n RegistroMantenimeinto: " + registroMantenimiento.Mantenimiento.Descripcion; }
+            catch { }
+            try { s += "\n OPERACION DENEGADA: " + operacion; }
+            catch { }
             return s;
         }
         public logItem() {

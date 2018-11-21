@@ -13,8 +13,7 @@ namespace barcobus
 
 
         public EmailException(logItem e) {
-            try
-            {
+
 
                 MailMessage msg = new MailMessage();
                 msg.From = new MailAddress("barcobus.noreply@gmail.com");
@@ -35,14 +34,9 @@ namespace barcobus
                 smt.Port = 587;
                 smt.Send(msg);
 
-                //MessageBox.Show("Your Mail is sended");  
+                System.Diagnostics.Debug.WriteLine("Your Mail is sended");  
 
-            }
-            catch (Exception ex)
-            {
-
-                //MessageBox.Show(ex.Message);  
-            }  
+            
         }
     }
 }
