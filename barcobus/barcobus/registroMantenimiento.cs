@@ -32,6 +32,13 @@ namespace barcobus
             get { return e; }
             set { e = value; }
         }
+        private int costo;
+
+        public int Costo
+        {
+            get { return costo; }
+            set { costo = value; }
+        }
 
     }
 }

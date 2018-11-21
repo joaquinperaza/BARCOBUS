@@ -50,5 +50,6 @@ namespace barcobus
         {
             get { return tripulacion; }
         }
+        public override String ToString() { return nombre; }
     }
 }

@@ -58,7 +58,8 @@
                             <asp:MenuItem Text="CREAR MANTENIMIENTO" Value="CREAR MANTENIMIENTO" 
                                 NavigateUrl="~/crearMantenimiento.aspx">
                             </asp:MenuItem>
-                            <asp:MenuItem Text="REGISTRO ACTIVIDAD" Value="REGISTRO ACTIVIDAD">
+                            <asp:MenuItem Text="REGISTRO ACTIVIDAD" Value="REGISTRO ACTIVIDAD" 
+                                NavigateUrl="~/log.aspx">
                             </asp:MenuItem>
                         </asp:MenuItem>
                     </Items>

@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <barcobus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Barcos />
+  <Barcos>
+    <barco xsi:type="barcoRapido">
+      <Nombre>barcorapido</Nombre>
+      <CapacidadPasajeros>11112</CapacidadPasajeros>
+      <CapacidadTripulantes>11</CapacidadTripulantes>
+      <LogMantenimientos />
+      <LogReparaciones />
+      <Tripulacion />
+      <VelocidadMax>200</VelocidadMax>
+    </barco>
+    <barco xsi:type="barcoLento">
+      <Nombre>dasd</Nombre>
+      <CapacidadPasajeros>1111</CapacidadPasajeros>
+      <CapacidadTripulantes>1</CapacidadTripulantes>
+      <LogMantenimientos />
+      <LogReparaciones />
+      <Tripulacion />
+      <CapacidadBodega>200</CapacidadBodega>
+    </barco>
+  </Barcos>
   <Tripulantes>
     <tripulante>
       <Nombre>admin</Nombre>
@@ -109,6 +128,64 @@
         <Descripcion>dsad</Descripcion>
       </Mantenimiento>
       <Operacion>Creacion de mantenimiento</Operacion>
+    </logItem>
+    <logItem>
+      <Encargado>
+        <Nombre>admin</Nombre>
+        <Ci>47361944</Ci>
+        <PersonasACargo>0</PersonasACargo>
+        <Permisos>3</Permisos>
+        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
+      </Encargado>
+      <Operacion>Ingreso.</Operacion>
+    </logItem>
+    <logItem>
+      <Encargado>
+        <Nombre>admin</Nombre>
+        <Ci>47361944</Ci>
+        <PersonasACargo>0</PersonasACargo>
+        <Permisos>3</Permisos>
+        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
+      </Encargado>
+      <Barco xsi:type="barcoRapido">
+        <Nombre>barcorapido</Nombre>
+        <CapacidadPasajeros>11112</CapacidadPasajeros>
+        <CapacidadTripulantes>11</CapacidadTripulantes>
+        <LogMantenimientos />
+        <LogReparaciones />
+        <Tripulacion />
+        <VelocidadMax>200</VelocidadMax>
+      </Barco>
+      <Operacion>Creacion de barco</Operacion>
+    </logItem>
+    <logItem>
+      <Encargado>
+        <Nombre>admin</Nombre>
+        <Ci>47361944</Ci>
+        <PersonasACargo>0</PersonasACargo>
+        <Permisos>3</Permisos>
+        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
+      </Encargado>
+      <Operacion>Ingreso.</Operacion>
+    </logItem>
+    <logItem>
+      <Encargado>
+        <Nombre>admin</Nombre>
+        <Ci>47361944</Ci>
+        <PersonasACargo>0</PersonasACargo>
+        <Permisos>3</Permisos>
+        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
+      </Encargado>
+      <Barco xsi:type="barcoLento">
+        <Nombre>dasd</Nombre>
+        <CapacidadPasajeros>1111</CapacidadPasajeros>
+        <CapacidadTripulantes>1</CapacidadTripulantes>
+        <LogMantenimientos />
+        <LogReparaciones />
+        <Tripulacion />
+        <CapacidadBodega>200</CapacidadBodega>
+      </Barco>
+      <Operacion>Creacion de barco</Operacion>
     </logItem>
   </Log>
 </barcobus>

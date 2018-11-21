@@ -5,6 +5,8 @@ using System.Web;
 using System.IO;
 using System.Text;
 using System.Security.Cryptography;
+using System.Data;
+using System.ComponentModel;
 
 namespace barcobus
 {
@@ -316,19 +318,88 @@ namespace barcobus
             }
         }
         public encargado login(Int32 ci, String clave) {
+            logItem ee = new logItem();
+            
             encargado e = db.Encargados.Find(e2 => e2.Ci == ci);
+            ee.Encargado = e;
+           
             if(e!=null){
             if (e.Password == clave)
             {
+                ee.Operacion = "Ingreso.";
+                db.Log.Add(ee);
                 return e;
             }
-            else { return null; }
+            else {
+                ee.Operacion = "Ingreso fallido: Clave incorrecta";
+                db.Log.Add(ee);
+                EmailException e2 = new EmailException(ee);
+                return null; }
             }
             else { return null; }
         }
+
+        public  DataTable logDataTable(DateTime desde,DateTime hasta)
+        {
+            DataTable table = new DataTable();
+            table.Columns.Add("Fecha",typeof(DateTime));
+            table.Columns.Add("Encargado", typeof(string));
+            table.Columns.Add("Operacion", typeof(string));
+            table.Columns.Add("URL", typeof(string));
+            foreach (logItem item in db.Log)
+            {   if(item.Timestamp>=desde && item.Timestamp<=hasta){
+                DataRow row = table.NewRow();
+                row["Fecha"] = item.Timestamp;
+                row["Encargado"] = item.Encargado.Nombre;
+                row["Operacion"] = item.Operacion;
+                row["URL"] = "";
+                table.Rows.Add(row);}
+            }
+            return table;
+        }
+        public DataTable barcoLog(barco b,DateTime d) {
+            int mes = d.Month;
+            int anio = d.Year;
+            DataTable table = new DataTable();
+            table.Columns.Add("Fecha", typeof(DateTime));
+            table.Columns.Add("Tipo", typeof(string));
+            table.Columns.Add("Encargado", typeof(string));
+            table.Columns.Add("Detalle", typeof(string));
+            table.Columns.Add("Costo", typeof(int));
+            
+            foreach (registroMantenimiento item in b.LogMantenimientos)
+            {
+                if (item.Timestamp.Month == mes && item.Timestamp.Year == anio)
+                {
+                    DataRow row = table.NewRow();
+                    row["Fecha"] = item.Timestamp;
+                    row["Encargado"] = item.Encargado.Nombre;
+                    row["Tipo"] = "Mantenimiento";
+                    row["Detalle"] = item.Descripcion;
+                    row["Costo"] = item.Costo;
+                    table.Rows.Add(row);
+                }
+            }
+            foreach (registroReparacion item in b.LogReparaciones)
+            {
+                if (item.Timestamp.Month == mes && item.Timestamp.Year == anio)
+                {
+                    DataRow row = table.NewRow();
+                    row["Fecha"] = item.Timestamp;
+                    row["Encargado"] = item.Encargado.Nombre;
+                    row["Tipo"] = "Reparacion";
+                    row["Detalle"] = item.Descripcion;
+                    table.Rows.Add(row);
+                }
+            }
+            return table;
+        }
+        public List<barco> barcoList() {
+            return db.Barcos;
+        }
         public string CalculateMD5Hash(string input)
 
-    {
+        {
         if (input != null)
         {
             // step 1, calculate MD5 hash from input
@@ -351,12 +422,9 @@ namespace barcobus
             }
 
             return sb.ToString();
-        }
-        else { return "NO TEXT"; }
-}
-
-
-
+         }
+         else { return "NO TEXT"; }
+    }
 
 
     }
