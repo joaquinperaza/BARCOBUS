@@ -39,7 +39,8 @@
                             <asp:MenuItem Text="ALTA" Value="ALTA">
                                 <asp:MenuItem Text="REPARACION" Value="REPARACION" 
                                     NavigateUrl="~/altaReparacion.aspx"></asp:MenuItem>
-                                <asp:MenuItem Text="MANTENIMIENTO" Value="MANTENIMIENTO"></asp:MenuItem>
+                                <asp:MenuItem Text="MANTENIMIENTO" Value="MANTENIMIENTO" 
+                                    NavigateUrl="~/altaMantenimiento.aspx"></asp:MenuItem>
                             </asp:MenuItem>
                             <asp:MenuItem Text="TRIPULACION" Value="TRIPULACION"></asp:MenuItem>
                             <asp:MenuItem Text="REGISTRO MANTENIMIENTOS" Value="REGISTRO MANTENIMIENTOS" 
