@@ -14,5 +14,12 @@ namespace barcobus
             get { return capacidadBodega; }
             set { capacidadBodega = value; }
         }
+        private int adicional;
+
+        public int Adicional
+        {
+            get { return adicional; }
+            set { adicional = value; }
+        }
     }
 }

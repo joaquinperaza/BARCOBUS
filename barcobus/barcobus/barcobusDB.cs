@@ -415,6 +415,7 @@ namespace barcobus
         
         return free;
         }
+        public List<mantenimiento> listaMantenimiento() { return db.Mantenimientos.ToList<mantenimiento>(); }
         public string CalculateMD5Hash(string input)
 
         {
