@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<barcobus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Barcos />
+  <Tripulantes />
+  <Encargados>
+    <encargado>
+      <Nombre>admin</Nombre>
+      <Ci>47361944</Ci>
+      <PersonasACargo>0</PersonasACargo>
+      <Permisos>3</Permisos>
+      <Password>21232F297A57A5A743894A0E4A801FC3</Password>
+    </encargado>
+  </Encargados>
+  <Mantenimientos />
+  <Log>
+    <logItem>
+      <Encargado>
+        <Nombre>admin</Nombre>
+        <Ci>47361944</Ci>
+        <PersonasACargo>0</PersonasACargo>
+        <Permisos>3</Permisos>
+        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
+      </Encargado>
+      <Operacion>Inicializacion de encargado: admin</Operacion>
+    </logItem>
+  </Log>
+</barcobus>
