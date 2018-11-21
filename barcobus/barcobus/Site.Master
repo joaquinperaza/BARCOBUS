@@ -55,7 +55,8 @@
                                     Value="REGISTRAR"></asp:MenuItem>
                                 <asp:MenuItem Text="ELIMINAR" Value="ELIMINAR"></asp:MenuItem>
                             </asp:MenuItem>
-                            <asp:MenuItem Text="CREAR MANTENIMIENTO" Value="CREAR MANTENIMIENTO">
+                            <asp:MenuItem Text="CREAR MANTENIMIENTO" Value="CREAR MANTENIMIENTO" 
+                                NavigateUrl="~/crearMantenimiento.aspx">
                             </asp:MenuItem>
                             <asp:MenuItem Text="REGISTRO ACTIVIDAD" Value="REGISTRO ACTIVIDAD">
                             </asp:MenuItem>

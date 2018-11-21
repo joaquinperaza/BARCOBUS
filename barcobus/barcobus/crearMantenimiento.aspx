@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-<h2>Crear nuevo mantenimiento</h2>
+    <h2>Crear nuevo mantenimiento</h2>
      <br />
     Codigo<br><asp:TextBox ID="TextBox1" runat="server" TextMode="Number"></asp:TextBox>
     <br />

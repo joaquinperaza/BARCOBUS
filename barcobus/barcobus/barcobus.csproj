@@ -58,6 +58,7 @@
     <Content Include="Account\Register.aspx" />
     <Content Include="admin.aspx" />
     <Content Include="crearMantenimiento.aspx" />
+    <Content Include="log.aspx" />
     <Content Include="RegistroEncargado.aspx" />
     <Content Include="RegistroTripulante.aspx" />
     <Content Include="RegistroBarcos.aspx" />
@@ -129,6 +130,13 @@
     </Compile>
     <Compile Include="crearMantenimiento.aspx.designer.cs">
       <DependentUpon>crearMantenimiento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="log.aspx.cs">
+      <DependentUpon>log.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="log.aspx.designer.cs">
+      <DependentUpon>log.aspx</DependentUpon>
     </Compile>
     <Compile Include="RegistroEncargado.aspx.cs">
       <DependentUpon>RegistroEncargado.aspx</DependentUpon>
