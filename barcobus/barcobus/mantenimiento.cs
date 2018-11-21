@@ -28,6 +28,7 @@ namespace barcobus
             get { return descripcion; }
             set { descripcion = value; }
         }
+        public override String ToString() { return descripcion; }
 
     }
 }

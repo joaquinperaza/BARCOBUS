@@ -72,6 +72,7 @@
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="tripulacionBarco.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -204,6 +205,13 @@
     </Compile>
     <Compile Include="registroMantenimiento.cs" />
     <Compile Include="registroReparacion.cs" />
+    <Compile Include="tripulacionBarco.aspx.cs">
+      <DependentUpon>tripulacionBarco.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tripulacionBarco.aspx.designer.cs">
+      <DependentUpon>tripulacionBarco.aspx</DependentUpon>
+    </Compile>
     <Compile Include="tripulante.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

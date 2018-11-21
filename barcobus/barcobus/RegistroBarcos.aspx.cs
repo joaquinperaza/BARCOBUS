@@ -46,6 +46,7 @@ namespace barcobus
                     b.CapacidadTripulantes = Convert.ToInt32(TextBox3.Text);
                     b.VelocidadMax = Convert.ToInt32(TextBox4.Text);
                     Global.b.createBarco(b, auth);
+                    label.Text = "Creado!";
                 }
             }
             catch {
@@ -58,9 +59,11 @@ namespace barcobus
             if (RadioButtonList1.SelectedItem.Text == "Barco lento")
             {
                 Label1.Text = "Capacidad bodega";
+                TextBox5.Enabled = true;
             }
             else {
                 Label1.Text = "Velocidad maxima";
+                TextBox5.Enabled = false;
             }
         }
 

@@ -1,7 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <barcobus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Barcos />
-  <Tripulantes />
+  <Barcos>
+    <barco xsi:type="barcoRapido">
+      <Nombre>BR1</Nombre>
+      <CapacidadPasajeros>10</CapacidadPasajeros>
+      <CapacidadTripulantes>100</CapacidadTripulantes>
+      <LogMantenimientos>
+        <registroMantenimiento>
+          <Timestamp>2018-11-21T23:28:59.4150354Z</Timestamp>
+          <Mantenimiento>
+            <Codigo>1001</Codigo>
+            <PrecioBase>100</PrecioBase>
+            <Descripcion>Cambio de aceite</Descripcion>
+          </Mantenimiento>
+          <Descripcion>103</Descripcion>
+          <Encargado>
+            <Nombre>admin</Nombre>
+            <Ci>47361944</Ci>
+            <PersonasACargo>0</PersonasACargo>
+            <Permisos>3</Permisos>
+            <Password>21232F297A57A5A743894A0E4A801FC3</Password>
+          </Encargado>
+          <Costo>230</Costo>
+        </registroMantenimiento>
+      </LogMantenimientos>
+      <LogReparaciones />
+      <Tripulacion>
+        <tripulante>
+          <Nombre>Emilio</Nombre>
+          <Ci>10</Ci>
+          <Rol>1</Rol>
+          <FechaIngreso>2018-11-21T23:43:53.0610915Z</FechaIngreso>
+        </tripulante>
+      </Tripulacion>
+      <VelocidadMax>10</VelocidadMax>
+    </barco>
+    <barco xsi:type="barcoLento">
+      <Nombre>BL2</Nombre>
+      <CapacidadPasajeros>10</CapacidadPasajeros>
+      <CapacidadTripulantes>100</CapacidadTripulantes>
+      <LogMantenimientos />
+      <LogReparaciones />
+      <Tripulacion />
+      <CapacidadBodega>10</CapacidadBodega>
+      <Adicional>150</Adicional>
+    </barco>
+  </Barcos>
+  <Tripulantes>
+    <tripulante>
+      <Nombre>Emilio</Nombre>
+      <Ci>10</Ci>
+      <Rol>1</Rol>
+      <FechaIngreso>2018-11-21T23:43:53.0610915Z</FechaIngreso>
+    </tripulante>
+  </Tripulantes>
   <Encargados>
     <encargado>
       <Nombre>admin</Nombre>
@@ -11,7 +63,13 @@
       <Password>21232F297A57A5A743894A0E4A801FC3</Password>
     </encargado>
   </Encargados>
-  <Mantenimientos />
+  <Mantenimientos>
+    <mantenimiento>
+      <Codigo>1001</Codigo>
+      <PrecioBase>100</PrecioBase>
+      <Descripcion>Cambio de aceite</Descripcion>
+    </mantenimiento>
+  </Mantenimientos>
   <Log>
     <logItem>
       <Encargado>
@@ -22,6 +80,188 @@
         <Password>21232F297A57A5A743894A0E4A801FC3</Password>
       </Encargado>
       <Operacion>Inicializacion de encargado: admin</Operacion>
+    </logItem>
+    <logItem>
+      <Encargado>
+        <Nombre>admin</Nombre>
+        <Ci>47361944</Ci>
+        <PersonasACargo>0</PersonasACargo>
+        <Permisos>3</Permisos>
+        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
+      </Encargado>
+      <Mantenimiento>
+        <Codigo>1001</Codigo>
+        <PrecioBase>100</PrecioBase>
+        <Descripcion>Cambio de aceite</Descripcion>
+      </Mantenimiento>
+      <Operacion>Creacion de mantenimiento</Operacion>
+    </logItem>
+    <logItem>
+      <Encargado>
+        <Nombre>admin</Nombre>
+        <Ci>47361944</Ci>
+        <PersonasACargo>0</PersonasACargo>
+        <Permisos>3</Permisos>
+        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
+      </Encargado>
+      <Barco xsi:type="barcoRapido">
+        <Nombre>BR1</Nombre>
+        <CapacidadPasajeros>10</CapacidadPasajeros>
+        <CapacidadTripulantes>100</CapacidadTripulantes>
+        <LogMantenimientos />
+        <LogReparaciones />
+        <Tripulacion />
+        <VelocidadMax>10</VelocidadMax>
+      </Barco>
+      <Operacion>Creacion de barco</Operacion>
+    </logItem>
+    <logItem>
+      <Encargado>
+        <Nombre>admin</Nombre>
+        <Ci>47361944</Ci>
+        <PersonasACargo>0</PersonasACargo>
+        <Permisos>3</Permisos>
+        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
+      </Encargado>
+      <Operacion>Ingreso.</Operacion>
+    </logItem>
+    <logItem>
+      <Encargado>
+        <Nombre>admin</Nombre>
+        <Ci>47361944</Ci>
+        <PersonasACargo>0</PersonasACargo>
+        <Permisos>3</Permisos>
+        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
+      </Encargado>
+      <Barco xsi:type="barcoRapido">
+        <Nombre>BR1</Nombre>
+        <CapacidadPasajeros>10</CapacidadPasajeros>
+        <CapacidadTripulantes>100</CapacidadTripulantes>
+        <LogMantenimientos>
+          <registroMantenimiento>
+            <Timestamp>2018-11-21T23:28:59.4150354Z</Timestamp>
+            <Mantenimiento>
+              <Codigo>1001</Codigo>
+              <PrecioBase>100</PrecioBase>
+              <Descripcion>Cambio de aceite</Descripcion>
+            </Mantenimiento>
+            <Descripcion>103</Descripcion>
+            <Encargado>
+              <Nombre>admin</Nombre>
+              <Ci>47361944</Ci>
+              <PersonasACargo>0</PersonasACargo>
+              <Permisos>3</Permisos>
+              <Password>21232F297A57A5A743894A0E4A801FC3</Password>
+            </Encargado>
+            <Costo>230</Costo>
+          </registroMantenimiento>
+        </LogMantenimientos>
+        <LogReparaciones />
+        <Tripulacion />
+        <VelocidadMax>10</VelocidadMax>
+      </Barco>
+      <registroMantenimiento>
+        <Timestamp>2018-11-21T23:28:59.4150354Z</Timestamp>
+        <Mantenimiento>
+          <Codigo>1001</Codigo>
+          <PrecioBase>100</PrecioBase>
+          <Descripcion>Cambio de aceite</Descripcion>
+        </Mantenimiento>
+        <Descripcion>103</Descripcion>
+        <Encargado>
+          <Nombre>admin</Nombre>
+          <Ci>47361944</Ci>
+          <PersonasACargo>0</PersonasACargo>
+          <Permisos>3</Permisos>
+          <Password>21232F297A57A5A743894A0E4A801FC3</Password>
+        </Encargado>
+        <Costo>230</Costo>
+      </registroMantenimiento>
+      <Operacion>Asignacion de mantenimiento</Operacion>
+    </logItem>
+    <logItem>
+      <Encargado>
+        <Nombre>admin</Nombre>
+        <Ci>47361944</Ci>
+        <PersonasACargo>0</PersonasACargo>
+        <Permisos>3</Permisos>
+        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
+      </Encargado>
+      <Operacion>Ingreso.</Operacion>
+    </logItem>
+    <logItem>
+      <Encargado>
+        <Nombre>admin</Nombre>
+        <Ci>47361944</Ci>
+        <PersonasACargo>0</PersonasACargo>
+        <Permisos>3</Permisos>
+        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
+      </Encargado>
+      <Barco xsi:type="barcoLento">
+        <Nombre>BL2</Nombre>
+        <CapacidadPasajeros>10</CapacidadPasajeros>
+        <CapacidadTripulantes>100</CapacidadTripulantes>
+        <LogMantenimientos />
+        <LogReparaciones />
+        <Tripulacion />
+        <CapacidadBodega>10</CapacidadBodega>
+        <Adicional>150</Adicional>
+      </Barco>
+      <Operacion>Creacion de barco</Operacion>
+    </logItem>
+    <logItem>
+      <Encargado>
+        <Nombre>admin</Nombre>
+        <Ci>47361944</Ci>
+        <PersonasACargo>0</PersonasACargo>
+        <Permisos>3</Permisos>
+        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
+      </Encargado>
+      <Operacion>Creacion de tripulante</Operacion>
+    </logItem>
+    <logItem>
+      <Encargado>
+        <Nombre>admin</Nombre>
+        <Ci>47361944</Ci>
+        <PersonasACargo>0</PersonasACargo>
+        <Permisos>3</Permisos>
+        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
+      </Encargado>
+      <Barco xsi:type="barcoRapido">
+        <Nombre>BR1</Nombre>
+        <CapacidadPasajeros>10</CapacidadPasajeros>
+        <CapacidadTripulantes>100</CapacidadTripulantes>
+        <LogMantenimientos>
+          <registroMantenimiento>
+            <Timestamp>2018-11-21T23:28:59.4150354Z</Timestamp>
+            <Mantenimiento>
+              <Codigo>1001</Codigo>
+              <PrecioBase>100</PrecioBase>
+              <Descripcion>Cambio de aceite</Descripcion>
+            </Mantenimiento>
+            <Descripcion>103</Descripcion>
+            <Encargado>
+              <Nombre>admin</Nombre>
+              <Ci>47361944</Ci>
+              <PersonasACargo>0</PersonasACargo>
+              <Permisos>3</Permisos>
+              <Password>21232F297A57A5A743894A0E4A801FC3</Password>
+            </Encargado>
+            <Costo>230</Costo>
+          </registroMantenimiento>
+        </LogMantenimientos>
+        <LogReparaciones />
+        <Tripulacion>
+          <tripulante>
+            <Nombre>Emilio</Nombre>
+            <Ci>10</Ci>
+            <Rol>1</Rol>
+            <FechaIngreso>2018-11-21T23:43:53.0610915Z</FechaIngreso>
+          </tripulante>
+        </Tripulacion>
+        <VelocidadMax>10</VelocidadMax>
+      </Barco>
+      <Operacion>Asignacion de tripulante</Operacion>
     </logItem>
   </Log>
 </barcobus>

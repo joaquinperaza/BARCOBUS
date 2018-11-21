@@ -6,7 +6,7 @@
     <br />
     Mantenimiento<br />
     <asp:DropDownList ID="DropDownList2" runat="server">
-    </asp:DropDownList>
+</asp:DropDownList>
     <br />
     <br />
     Descripcion<br />

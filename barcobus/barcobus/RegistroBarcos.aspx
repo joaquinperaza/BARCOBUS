@@ -3,7 +3,7 @@
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-<h2>Crear nuevo barco</h2>
+    <h2>Crear nuevo barco</h2>
 <br/>
   <asp:RadioButtonList id="RadioButtonList1" runat="server" 
         onselectedindexchanged="RadioButtonList1_SelectedIndexChanged" AutoPostBack="true">
@@ -20,9 +20,9 @@
     <asp:Label ID="Label1" runat="server" Text="Label">Capacidad bodega</asp:Label><br/><asp:TextBox ID="TextBox4" runat="server" 
         TextMode="Number"></asp:TextBox>
     <br />
-    <br />
-    Base<br />
-    <asp:TextBox ID="TextBox5" runat="server" TextMode="Number"></asp:TextBox>
+<br />
+Base<br />
+<asp:TextBox ID="TextBox5" runat="server" TextMode="Number"></asp:TextBox>
     <br />
     <asp:Label ID="label" runat="server" Text="" 
         style="color: #FF0000; font-weight: 700"></asp:Label>

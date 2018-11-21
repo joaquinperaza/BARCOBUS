@@ -42,7 +42,8 @@
                                 <asp:MenuItem Text="MANTENIMIENTO" Value="MANTENIMIENTO" 
                                     NavigateUrl="~/altaMantenimiento.aspx"></asp:MenuItem>
                             </asp:MenuItem>
-                            <asp:MenuItem Text="TRIPULACION" Value="TRIPULACION"></asp:MenuItem>
+                            <asp:MenuItem Text="TRIPULACION" Value="TRIPULACION" 
+                                NavigateUrl="~/tripulacionBarco.aspx"></asp:MenuItem>
                             <asp:MenuItem Text="REGISTRO MANTENIMIENTOS" Value="REGISTRO MANTENIMIENTOS" 
                                 NavigateUrl="~/barcoLog.aspx">
                             </asp:MenuItem>
@@ -58,7 +59,6 @@
                             <asp:MenuItem Text="ENCARGADO" Value="ENCARGADO">
                                 <asp:MenuItem NavigateUrl="~/RegistroEncargado.aspx" Text="REGISTRAR" 
                                     Value="REGISTRAR"></asp:MenuItem>
-                                <asp:MenuItem Text="ELIMINAR" Value="ELIMINAR"></asp:MenuItem>
                             </asp:MenuItem>
                             <asp:MenuItem Text="CREAR MANTENIMIENTO" Value="CREAR MANTENIMIENTO" 
                                 NavigateUrl="~/crearMantenimiento.aspx">

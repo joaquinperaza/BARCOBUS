@@ -369,6 +369,31 @@ namespace barcobus
             }
             return table;
         }
+        public DataTable tripulacion(barco b)
+        {
+            DataTable table = new DataTable();
+            table.Columns.Add("CI", typeof(int));
+            table.Columns.Add("FechaIngreso", typeof(DateTime));
+            table.Columns.Add("Nombre", typeof(string));
+            table.Columns.Add("Rol", typeof(string));
+            foreach (tripulante item in b.Tripulacion)
+            {
+              
+                    DataRow row = table.NewRow();
+                    row["CI"] = item.Ci;
+                    row["FechaIngreso"] = item.FechaIngreso;
+                    row["Nombre"] = item.Nombre;
+                    if (item.Rol == 1) { row["Rol"] = "Capitan"; }
+                    if (item.Rol == 2) { row["Rol"] = "Oficial de cubierta"; }
+                    if (item.Rol == 3) { row["Rol"] = "Piloto"; }
+                    if (item.Rol == 4) { row["Rol"] = "Comisario de a bordo"; }
+                    if (item.Rol == 5) { row["Rol"] = "Jefe de Maquinas"; }
+                    if (item.Rol == 6) { row["Rol"] = "Servicios"; }
+                    table.Rows.Add(row);
+                
+            }
+            return table;
+        }
         public DataTable barcoLog(string b3,DateTime d) {
             barco b = db.Barcos.Find(b2 => b2.Nombre == b3);
             int mes = d.Month;
