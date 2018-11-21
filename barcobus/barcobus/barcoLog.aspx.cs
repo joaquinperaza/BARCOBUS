@@ -14,8 +14,9 @@ namespace barcobus
         {
             bl = Global.b.barcoList();
             DropDownList1.DataSource = bl;
+            if(!IsPostBack)
             DropDownList1.DataBind();
-            DropDownList1.SelectedIndex = 1;
+            DropDownList1.SelectedIndex = 0;
 
         }
 

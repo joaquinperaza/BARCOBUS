@@ -34,6 +34,7 @@ namespace barcobus
                     b.CapacidadTripulantes = Convert.ToInt32(TextBox3.Text);
                     b.CapacidadBodega = Convert.ToInt32(TextBox4.Text);
                     Global.b.createBarco(b, auth);
+                    label.Text = "Creado!";
 
                 }
                 else

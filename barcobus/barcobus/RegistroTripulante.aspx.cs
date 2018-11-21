@@ -31,6 +31,7 @@ namespace barcobus
             t.Rol = Convert.ToInt32(DropDownList1.SelectedValue);
 
             Global.b.createTripulante(t, auth);
+            label.Text = "Creado!";
         }
         catch { label.Text = "Revise los campos de informacion."; }
         }

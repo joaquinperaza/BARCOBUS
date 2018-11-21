@@ -34,6 +34,7 @@ namespace barcobus
                 e.Permisos = Convert.ToInt32(DropDownList1.SelectedValue);
                 e.Password = Global.b.CalculateMD5Hash(TextBox4.Text);
                 Global.b.createEncargado(e, auth);
+                label.Text = "Creado!";
             }
             catch { label.Text = "Revise los campos de informacion."; }
         }

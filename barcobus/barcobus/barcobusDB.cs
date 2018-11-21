@@ -210,7 +210,9 @@ namespace barcobus
         /// <param name="barco">Barco a asignarle tripulacion</param>
         /// <param name="encargado">Encargado de la asignacion</param>
         /// <param name="tripulante">Tripulante a asignar</param>
-        public int asignarTripulante(barco barco, encargado encargado, tripulante tripulante) {
+        public int asignarTripulante(string b, encargado encargado, string t) {
+            barco barco = db.Barcos.Find(b2 => b2.Nombre == b);
+            tripulante tripulante = db.Tripulantes.Find(t2 => t2.Nombre == t);
             logItem e = new logItem();
             e.Encargado = encargado;
             e.Barco = barco;
@@ -396,6 +398,17 @@ namespace barcobus
         }
         public List<barco> barcoList() {
             return db.Barcos;
+        }
+        public List<tripulante> tripulanteList()
+        {   List<tripulante> free= db.Tripulantes.ToList<tripulante>();
+        foreach (tripulante item in db.Tripulantes) { 
+            foreach(barco b in db.Barcos){
+            if (b.Tripulacion.Contains(item)){
+                free.Remove(item);
+            }
+            }
+        }
+        return free;
         }
         public string CalculateMD5Hash(string input)
 

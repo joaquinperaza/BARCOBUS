@@ -35,6 +35,7 @@ namespace barcobus
             get { return fechaIngreso; }
             set { fechaIngreso = value; }
         }
+        public override String ToString() { return nombre; }
 
     }
 }

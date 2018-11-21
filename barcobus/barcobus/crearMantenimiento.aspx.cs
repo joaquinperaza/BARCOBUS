@@ -32,6 +32,7 @@ namespace barcobus
                     m.Descripcion = TextBox2.Text;
                     m.PrecioBase = Convert.ToInt32(TextBox3.Text);
                     Global.b.createMantenimiento(m, auth);
+                    label.Text = "Creado!";
                 }
                 catch { }
         }
