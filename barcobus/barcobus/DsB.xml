@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <barcobus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Barcos />
-  <Tripulantes />
+  <Tripulantes>
+    <tripulante>
+      <Nombre>admin</Nombre>
+      <Ci>1111</Ci>
+      <Rol>3</Rol>
+      <FechaIngreso>0001-01-01T00:00:00</FechaIngreso>
+    </tripulante>
+    <tripulante>
+      <Nombre>admin</Nombre>
+      <Ci>1111</Ci>
+      <Rol>3</Rol>
+      <FechaIngreso>0001-01-01T00:00:00</FechaIngreso>
+    </tripulante>
+  </Tripulantes>
   <Encargados>
     <encargado>
       <Nombre>admin</Nombre>
@@ -24,7 +37,13 @@
       <Password>62F41279FDE8210BA91F8A6712A8CE4A</Password>
     </encargado>
   </Encargados>
-  <Mantenimientos />
+  <Mantenimientos>
+    <mantenimiento>
+      <Codigo>3</Codigo>
+      <PrecioBase>12</PrecioBase>
+      <Descripcion>dsad</Descripcion>
+    </mantenimiento>
+  </Mantenimientos>
   <Log>
     <logItem>
       <Encargado>
@@ -55,6 +74,41 @@
         <Password>21232F297A57A5A743894A0E4A801FC3</Password>
       </Encargado>
       <Operacion>Creacion de encargado: emilio</Operacion>
+    </logItem>
+    <logItem>
+      <Encargado>
+        <Nombre>admin</Nombre>
+        <Ci>47361944</Ci>
+        <PersonasACargo>0</PersonasACargo>
+        <Permisos>3</Permisos>
+        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
+      </Encargado>
+      <Operacion>Creacion de tripulante</Operacion>
+    </logItem>
+    <logItem>
+      <Encargado>
+        <Nombre>admin</Nombre>
+        <Ci>47361944</Ci>
+        <PersonasACargo>0</PersonasACargo>
+        <Permisos>3</Permisos>
+        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
+      </Encargado>
+      <Operacion>Creacion de tripulante</Operacion>
+    </logItem>
+    <logItem>
+      <Encargado>
+        <Nombre>admin</Nombre>
+        <Ci>47361944</Ci>
+        <PersonasACargo>0</PersonasACargo>
+        <Permisos>3</Permisos>
+        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
+      </Encargado>
+      <Mantenimiento>
+        <Codigo>3</Codigo>
+        <PrecioBase>12</PrecioBase>
+        <Descripcion>dsad</Descripcion>
+      </Mantenimiento>
+      <Operacion>Creacion de mantenimiento</Operacion>
     </logItem>
   </Log>
 </barcobus>

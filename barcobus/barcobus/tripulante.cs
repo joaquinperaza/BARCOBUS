@@ -28,6 +28,13 @@ namespace barcobus
             get { return rol; }
             set { rol = value; }
         }
+        private DateTime fechaIngreso;
+
+        public DateTime FechaIngreso
+        {
+            get { return fechaIngreso; }
+            set { fechaIngreso = value; }
+        }
 
     }
 }

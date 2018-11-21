@@ -7,9 +7,9 @@ namespace barcobus
 {
     public class registroMantenimiento
     {
-        private int timestamp;
+        private DateTime timestamp;
 
-        public int Timestamp
+        public DateTime Timestamp
         {
             get { return timestamp; }
             set { timestamp = value; }

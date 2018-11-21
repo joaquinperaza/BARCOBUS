@@ -7,9 +7,9 @@ namespace barcobus
 {
     public class logItem
     {
-        private int timestamp;
+        private DateTime timestamp;
 
-        public int Timestamp
+        public DateTime Timestamp
         {
             get { return timestamp; }
         }
@@ -80,7 +80,7 @@ namespace barcobus
             return s;
         }
         public logItem() {
-            timestamp = (int)(DateTime.UtcNow - new DateTime(1970, 1, 1)).TotalSeconds;
+            timestamp = DateTime.UtcNow;
         }
 
 

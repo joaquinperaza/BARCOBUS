@@ -12,3 +12,4 @@ C:\Users\Joaquin Peraza\Documents\GitHub\BARCOBUS\barcobus\barcobus\obj\Debug\ba
 \\Mac\Home\Documents\BARCOBUS\barcobus\barcobus\bin\barcobus.pdb
 \\Mac\Home\Documents\BARCOBUS\barcobus\barcobus\obj\Debug\barcobus.dll
 \\Mac\Home\Documents\BARCOBUS\barcobus\barcobus\obj\Debug\barcobus.pdb
+\\Mac\Home\Documents\BARCOBUS\barcobus\barcobus\obj\Debug\barcobus.csprojResolveAssemblyReference.cache

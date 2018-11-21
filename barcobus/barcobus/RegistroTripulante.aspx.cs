@@ -15,13 +15,24 @@ namespace barcobus
         }
 
         protected void Button1_Click(object sender, EventArgs e)
+        {   encargado auth = (encargado)Session["auth"];
+        if (auth==null)
+        {
+            label.Text = "Debe ingresar al sistema.";
+        }
+        else if (auth.Permisos < 2) {
+                label.Text = "No cuenta con los permisos necesarios para completar la operacion.";
+            }
+        else try
         {
             tripulante t = new tripulante();
             t.Nombre = TextBox1.Text;
             t.Ci = Convert.ToInt32(TextBox2.Text);
             t.Rol = Convert.ToInt32(DropDownList1.SelectedValue);
-            encargado auth = (encargado)Session["auth"];
+
             Global.b.createTripulante(t, auth);
+        }
+        catch { label.Text = "Revise los campos de informacion."; }
         }
 
         

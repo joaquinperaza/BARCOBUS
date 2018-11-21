@@ -20,6 +20,8 @@
     <asp:Label ID="Label1" runat="server" Text="Label">Capacidad bodega</asp:Label><br/><asp:TextBox ID="TextBox4" runat="server" 
         TextMode="Number"></asp:TextBox>
     <br />
+    <asp:Label ID="label" runat="server" Text="" 
+        style="color: #FF0000; font-weight: 700"></asp:Label>
     <br />
     <asp:Button ID="Button1" runat="server" Text="Crear barco" 
         onclick="Button1_Click" />

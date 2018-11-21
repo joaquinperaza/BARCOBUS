@@ -27,6 +27,8 @@
     </asp:DropDownList>
     <br />
     <br />
+    <asp:Label ID="label" runat="server" 
+        style="color: #FF0000; font-weight: 700"></asp:Label>
     <br />
     <asp:Button ID="Button1" runat="server" Text="Crear tripulante" 
         onclick="Button1_Click" />

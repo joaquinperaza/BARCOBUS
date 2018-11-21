@@ -36,14 +36,28 @@
                         <asp:MenuItem Text="BARCO" Value="BARCO">
                             <asp:MenuItem NavigateUrl="~/RegistroBarcos.aspx" Text="CREAR" Value="CREAR">
                             </asp:MenuItem>
+                            <asp:MenuItem Text="ALTA" Value="ALTA">
+                                <asp:MenuItem Text="REPARACION" Value="REPARACION"></asp:MenuItem>
+                                <asp:MenuItem Text="MANTENIMIENTO" Value="MANTENIMIENTO"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="TRIPULACION" Value="TRIPULACION"></asp:MenuItem>
+                            <asp:MenuItem Text="REGISTRO MANTENIMIENTOS" Value="REGISTRO MANTENIMIENTOS">
+                            </asp:MenuItem>
                         </asp:MenuItem>
                         <asp:MenuItem Text="TRIPULANTE" 
                             Value="TRIPULANTE">
                             <asp:MenuItem NavigateUrl="~/RegistroTripulante.aspx" Text="CREAR" 
                                 Value="CREAR"></asp:MenuItem>
                         </asp:MenuItem>
-                        <asp:MenuItem Text="ENCARGADO" Value="ENCARGADO">
-                            <asp:MenuItem NavigateUrl="~/RegistroEncargado.aspx" Text="CREAR" Value="CREAR">
+                        <asp:MenuItem Text="EMPRESA" Value="EMPRESA">
+                            <asp:MenuItem Text="ENCARGADO" Value="ENCARGADO">
+                                <asp:MenuItem NavigateUrl="~/RegistroEncargado.aspx" Text="REGISTRAR" 
+                                    Value="REGISTRAR"></asp:MenuItem>
+                                <asp:MenuItem Text="ELIMINAR" Value="ELIMINAR"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="CREAR MANTENIMIENTO" Value="CREAR MANTENIMIENTO">
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="REGISTRO ACTIVIDAD" Value="REGISTRO ACTIVIDAD">
                             </asp:MenuItem>
                         </asp:MenuItem>
                     </Items>
