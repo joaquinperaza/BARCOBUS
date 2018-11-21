@@ -33,9 +33,19 @@
                 <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
                     <Items>
                         <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Página principal"/>
-                        <asp:MenuItem NavigateUrl="~/About.aspx" Text="Acerca de"/>
-                        <asp:MenuItem NavigateUrl="~/RegistroBarcos.aspx" Text="New Item" 
-                            Value="New Item"></asp:MenuItem>
+                        <asp:MenuItem Text="BARCO" Value="BARCO">
+                            <asp:MenuItem NavigateUrl="~/RegistroBarcos.aspx" Text="CREAR" Value="CREAR">
+                            </asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="TRIPULANTE" 
+                            Value="TRIPULANTE">
+                            <asp:MenuItem NavigateUrl="~/RegistroTripulante.aspx" Text="CREAR" 
+                                Value="CREAR"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="ENCARGADO" Value="ENCARGADO">
+                            <asp:MenuItem NavigateUrl="~/RegistroEncargado.aspx" Text="CREAR" Value="CREAR">
+                            </asp:MenuItem>
+                        </asp:MenuItem>
                     </Items>
                 </asp:Menu>
             </div>

@@ -3,7 +3,7 @@
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-<h2>Crear nuevo barco.</h2>
+<h2>Crear nuevo barco</h2>
 <br/>
   <asp:RadioButtonList id="RadioButtonList1" runat="server" 
         onselectedindexchanged="RadioButtonList1_SelectedIndexChanged" AutoPostBack="true">

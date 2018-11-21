@@ -3,7 +3,7 @@
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-<h2>Crear nuevo Tripulante.</h2>
+<h2>Crear nuevo Tripulante</h2>
      <br />
     Nombre<br><asp:TextBox ID="TextBox1" runat="server"></asp:TextBox><br/><br/>
     Cedula<br/><asp:TextBox ID="TextBox2" runat="server" 

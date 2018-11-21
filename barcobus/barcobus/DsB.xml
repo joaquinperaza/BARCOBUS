@@ -1,48 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <barcobus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Barcos>
-    <barco xsi:type="barcoLento">
-      <Nombre>blento</Nombre>
-      <CapacidadPasajeros>20</CapacidadPasajeros>
-      <CapacidadTripulantes>3</CapacidadTripulantes>
-      <LogMantenimientos />
-      <LogReparaciones />
-      <Tripulacion />
-      <CapacidadBodega>200</CapacidadBodega>
-    </barco>
-    <barco xsi:type="barcoRapido">
-      <Nombre>brapid</Nombre>
-      <CapacidadPasajeros>20</CapacidadPasajeros>
-      <CapacidadTripulantes>3</CapacidadTripulantes>
-      <LogMantenimientos />
-      <LogReparaciones />
-      <Tripulacion />
-      <VelocidadMax>200</VelocidadMax>
-    </barco>
-    <barco xsi:type="barcoRapido">
-      <Nombre>brapid</Nombre>
-      <CapacidadPasajeros>20</CapacidadPasajeros>
-      <CapacidadTripulantes>3</CapacidadTripulantes>
-      <LogMantenimientos />
-      <LogReparaciones />
-      <Tripulacion />
-      <VelocidadMax>200</VelocidadMax>
-    </barco>
-  </Barcos>
-  <Tripulantes>
-    <tripulante>
-      <Nombre>jose</Nombre>
-      <Ci>12345</Ci>
-      <Rol>3</Rol>
-    </tripulante>
-  </Tripulantes>
+  <Barcos />
+  <Tripulantes />
   <Encargados>
     <encargado>
       <Nombre>admin</Nombre>
       <Ci>47361944</Ci>
       <PersonasACargo>0</PersonasACargo>
-      <Permisos>5</Permisos>
+      <Permisos>3</Permisos>
       <Password>21232F297A57A5A743894A0E4A801FC3</Password>
+    </encargado>
+    <encargado>
+      <Nombre>admin2</Nombre>
+      <Ci>12345</Ci>
+      <PersonasACargo>0</PersonasACargo>
+      <Permisos>3</Permisos>
+    </encargado>
+    <encargado>
+      <Nombre>emilio</Nombre>
+      <Ci>1111</Ci>
+      <PersonasACargo>12</PersonasACargo>
+      <Permisos>1</Permisos>
+      <Password>62F41279FDE8210BA91F8A6712A8CE4A</Password>
     </encargado>
   </Encargados>
   <Mantenimientos />
@@ -52,7 +31,7 @@
         <Nombre>admin</Nombre>
         <Ci>47361944</Ci>
         <PersonasACargo>0</PersonasACargo>
-        <Permisos>5</Permisos>
+        <Permisos>3</Permisos>
         <Password>21232F297A57A5A743894A0E4A801FC3</Password>
       </Encargado>
       <Operacion>Inicializacion de encargado: admin</Operacion>
@@ -62,67 +41,20 @@
         <Nombre>admin</Nombre>
         <Ci>47361944</Ci>
         <PersonasACargo>0</PersonasACargo>
-        <Permisos>5</Permisos>
+        <Permisos>3</Permisos>
         <Password>21232F297A57A5A743894A0E4A801FC3</Password>
       </Encargado>
-      <Barco xsi:type="barcoLento">
-        <Nombre>blento</Nombre>
-        <CapacidadPasajeros>20</CapacidadPasajeros>
-        <CapacidadTripulantes>3</CapacidadTripulantes>
-        <LogMantenimientos />
-        <LogReparaciones />
-        <Tripulacion />
-        <CapacidadBodega>200</CapacidadBodega>
-      </Barco>
-      <Operacion>Creacion de barco</Operacion>
+      <Operacion>Creacion de encargado: admin2</Operacion>
     </logItem>
     <logItem>
       <Encargado>
         <Nombre>admin</Nombre>
         <Ci>47361944</Ci>
         <PersonasACargo>0</PersonasACargo>
-        <Permisos>5</Permisos>
+        <Permisos>3</Permisos>
         <Password>21232F297A57A5A743894A0E4A801FC3</Password>
       </Encargado>
-      <Barco xsi:type="barcoRapido">
-        <Nombre>brapid</Nombre>
-        <CapacidadPasajeros>20</CapacidadPasajeros>
-        <CapacidadTripulantes>3</CapacidadTripulantes>
-        <LogMantenimientos />
-        <LogReparaciones />
-        <Tripulacion />
-        <VelocidadMax>200</VelocidadMax>
-      </Barco>
-      <Operacion>Creacion de barco</Operacion>
-    </logItem>
-    <logItem>
-      <Encargado>
-        <Nombre>admin</Nombre>
-        <Ci>47361944</Ci>
-        <PersonasACargo>0</PersonasACargo>
-        <Permisos>5</Permisos>
-        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
-      </Encargado>
-      <Barco xsi:type="barcoRapido">
-        <Nombre>brapid</Nombre>
-        <CapacidadPasajeros>20</CapacidadPasajeros>
-        <CapacidadTripulantes>3</CapacidadTripulantes>
-        <LogMantenimientos />
-        <LogReparaciones />
-        <Tripulacion />
-        <VelocidadMax>200</VelocidadMax>
-      </Barco>
-      <Operacion>Creacion de barco</Operacion>
-    </logItem>
-    <logItem>
-      <Encargado>
-        <Nombre>admin</Nombre>
-        <Ci>47361944</Ci>
-        <PersonasACargo>0</PersonasACargo>
-        <Permisos>5</Permisos>
-        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
-      </Encargado>
-      <Operacion>Creacion de tripulante</Operacion>
+      <Operacion>Creacion de encargado: emilio</Operacion>
     </logItem>
   </Log>
 </barcobus>

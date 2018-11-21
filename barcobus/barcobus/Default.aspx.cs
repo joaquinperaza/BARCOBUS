@@ -32,7 +32,7 @@ namespace barcobus
             admin.Nombre = TextBox1.Text;
             admin.Password = Global.b.CalculateMD5Hash(TextBox2.Text);
             admin.Ci = Convert.ToInt32( TextBox3.Text);
-            admin.Permisos = 5;
+            admin.Permisos = 3;
             admin.PersonasACargo = 0;
             Global.b.initEncargado(admin);
             Session["auth"] = admin;
