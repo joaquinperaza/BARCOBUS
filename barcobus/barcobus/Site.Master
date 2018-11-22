@@ -19,6 +19,15 @@
             color: #0000FF;
             background-color: #FFFFFF;
         }
+        .style3
+        {
+            color: #FFFFFF;
+            background-color: #0033CC;
+        }
+        .style4
+        {
+            font-weight: normal;
+        }
     </style>
 </head>
 <body>
@@ -27,18 +36,9 @@
         <div class="header">
             <div class="title">
                 <h1 class="style1">
-                    <em>BARCO<span class="style2">BUS</span> - GESTION DE BARCOS</em></h1>
+                    <span class="style4"><span class="style3"><strong>BARCO</strong></span><span class="style2">BUS</span></span><em> - GESTION DE BARCOS</em></h1>
             </div>
             <div class="loginDisplay">
-                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
-                    <AnonymousTemplate>
-                        [ <a href="~/Account/Login.aspx" ID="HeadLoginStatus" runat="server">Iniciar sesión</a> ]
-                    </AnonymousTemplate>
-                    <LoggedInTemplate>
-                        Pantalla de bienvenida <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>!
-                        [ <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Cerrar sesión" LogoutPageUrl="~/"/> ]
-                    </LoggedInTemplate>
-                </asp:LoginView>
             </div>
             <div class="clear hideSkiplink">
                 <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
