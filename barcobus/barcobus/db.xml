@@ -25,14 +25,7 @@
         </registroMantenimiento>
       </LogMantenimientos>
       <LogReparaciones />
-      <Tripulacion>
-        <tripulante>
-          <Nombre>Emilio</Nombre>
-          <Ci>10</Ci>
-          <Rol>1</Rol>
-          <FechaIngreso>2018-11-21T23:43:53.0610915Z</FechaIngreso>
-        </tripulante>
-      </Tripulacion>
+      <Tripulacion />
       <VelocidadMax>10</VelocidadMax>
     </barco>
     <barco xsi:type="barcoLento">
@@ -41,7 +34,20 @@
       <CapacidadTripulantes>100</CapacidadTripulantes>
       <LogMantenimientos />
       <LogReparaciones />
-      <Tripulacion />
+      <Tripulacion>
+        <tripulante>
+          <Nombre>Pedro</Nombre>
+          <Ci>46578323</Ci>
+          <Rol>1</Rol>
+          <FechaIngreso>2018-11-21T23:47:02.22397Z</FechaIngreso>
+        </tripulante>
+        <tripulante>
+          <Nombre>Emilio</Nombre>
+          <Ci>10</Ci>
+          <Rol>1</Rol>
+          <FechaIngreso>2018-11-21T23:43:53.0610915Z</FechaIngreso>
+        </tripulante>
+      </Tripulacion>
       <CapacidadBodega>10</CapacidadBodega>
       <Adicional>150</Adicional>
     </barco>
@@ -53,6 +59,30 @@
       <Rol>1</Rol>
       <FechaIngreso>2018-11-21T23:43:53.0610915Z</FechaIngreso>
     </tripulante>
+    <tripulante>
+      <Nombre>Pedro</Nombre>
+      <Ci>46578323</Ci>
+      <Rol>1</Rol>
+      <FechaIngreso>2018-11-21T23:47:02.22397Z</FechaIngreso>
+    </tripulante>
+    <tripulante>
+      <Nombre>Emilio 2</Nombre>
+      <Ci>46578323</Ci>
+      <Rol>4</Rol>
+      <FechaIngreso>2018-11-22T00:06:28.8812169Z</FechaIngreso>
+    </tripulante>
+    <tripulante>
+      <Nombre>JOse</Nombre>
+      <Ci>46578323</Ci>
+      <Rol>6</Rol>
+      <FechaIngreso>2018-11-22T00:06:35.0502205Z</FechaIngreso>
+    </tripulante>
+    <tripulante>
+      <Nombre>Mario</Nombre>
+      <Ci>46578323</Ci>
+      <Rol>5</Rol>
+      <FechaIngreso>2018-11-22T00:07:57.569217Z</FechaIngreso>
+    </tripulante>
   </Tripulantes>
   <Encargados>
     <encargado>
@@ -60,6 +90,13 @@
       <Ci>47361944</Ci>
       <PersonasACargo>0</PersonasACargo>
       <Permisos>3</Permisos>
+      <Password>21232F297A57A5A743894A0E4A801FC3</Password>
+    </encargado>
+    <encargado>
+      <Nombre>jose2</Nombre>
+      <Ci>1001</Ci>
+      <PersonasACargo>12</PersonasACargo>
+      <Permisos>2</Permisos>
       <Password>21232F297A57A5A743894A0E4A801FC3</Password>
     </encargado>
   </Encargados>
@@ -262,6 +299,172 @@
         <VelocidadMax>10</VelocidadMax>
       </Barco>
       <Operacion>Asignacion de tripulante</Operacion>
+    </logItem>
+    <logItem>
+      <Encargado>
+        <Nombre>admin</Nombre>
+        <Ci>47361944</Ci>
+        <PersonasACargo>0</PersonasACargo>
+        <Permisos>3</Permisos>
+        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
+      </Encargado>
+      <Operacion>Ingreso.</Operacion>
+    </logItem>
+    <logItem>
+      <Encargado>
+        <Nombre>admin</Nombre>
+        <Ci>47361944</Ci>
+        <PersonasACargo>0</PersonasACargo>
+        <Permisos>3</Permisos>
+        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
+      </Encargado>
+      <Operacion>Creacion de tripulante</Operacion>
+    </logItem>
+    <logItem>
+      <Encargado>
+        <Nombre>admin</Nombre>
+        <Ci>47361944</Ci>
+        <PersonasACargo>0</PersonasACargo>
+        <Permisos>3</Permisos>
+        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
+      </Encargado>
+      <Barco xsi:type="barcoLento">
+        <Nombre>BL2</Nombre>
+        <CapacidadPasajeros>10</CapacidadPasajeros>
+        <CapacidadTripulantes>100</CapacidadTripulantes>
+        <LogMantenimientos />
+        <LogReparaciones />
+        <Tripulacion>
+          <tripulante>
+            <Nombre>Pedro</Nombre>
+            <Ci>46578323</Ci>
+            <Rol>1</Rol>
+            <FechaIngreso>2018-11-21T23:47:02.22397Z</FechaIngreso>
+          </tripulante>
+          <tripulante>
+            <Nombre>Emilio</Nombre>
+            <Ci>10</Ci>
+            <Rol>1</Rol>
+            <FechaIngreso>2018-11-21T23:43:53.0610915Z</FechaIngreso>
+          </tripulante>
+        </Tripulacion>
+        <CapacidadBodega>10</CapacidadBodega>
+        <Adicional>150</Adicional>
+      </Barco>
+      <Operacion>Asignacion de tripulante</Operacion>
+    </logItem>
+    <logItem>
+      <Encargado>
+        <Nombre>admin</Nombre>
+        <Ci>47361944</Ci>
+        <PersonasACargo>0</PersonasACargo>
+        <Permisos>3</Permisos>
+        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
+      </Encargado>
+      <Barco xsi:type="barcoLento">
+        <Nombre>BL2</Nombre>
+        <CapacidadPasajeros>10</CapacidadPasajeros>
+        <CapacidadTripulantes>100</CapacidadTripulantes>
+        <LogMantenimientos />
+        <LogReparaciones />
+        <Tripulacion>
+          <tripulante>
+            <Nombre>Pedro</Nombre>
+            <Ci>46578323</Ci>
+            <Rol>1</Rol>
+            <FechaIngreso>2018-11-21T23:47:02.22397Z</FechaIngreso>
+          </tripulante>
+          <tripulante>
+            <Nombre>Emilio</Nombre>
+            <Ci>10</Ci>
+            <Rol>1</Rol>
+            <FechaIngreso>2018-11-21T23:43:53.0610915Z</FechaIngreso>
+          </tripulante>
+        </Tripulacion>
+        <CapacidadBodega>10</CapacidadBodega>
+        <Adicional>150</Adicional>
+      </Barco>
+      <Operacion>Asignacion de tripulante</Operacion>
+    </logItem>
+    <logItem>
+      <Encargado>
+        <Nombre>admin</Nombre>
+        <Ci>47361944</Ci>
+        <PersonasACargo>0</PersonasACargo>
+        <Permisos>3</Permisos>
+        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
+      </Encargado>
+      <Operacion>Ingreso.</Operacion>
+    </logItem>
+    <logItem>
+      <Encargado>
+        <Nombre>admin</Nombre>
+        <Ci>47361944</Ci>
+        <PersonasACargo>0</PersonasACargo>
+        <Permisos>3</Permisos>
+        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
+      </Encargado>
+      <Operacion>Creacion de tripulante</Operacion>
+    </logItem>
+    <logItem>
+      <Encargado>
+        <Nombre>admin</Nombre>
+        <Ci>47361944</Ci>
+        <PersonasACargo>0</PersonasACargo>
+        <Permisos>3</Permisos>
+        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
+      </Encargado>
+      <Operacion>Creacion de tripulante</Operacion>
+    </logItem>
+    <logItem>
+      <Encargado>
+        <Nombre>admin</Nombre>
+        <Ci>47361944</Ci>
+        <PersonasACargo>0</PersonasACargo>
+        <Permisos>3</Permisos>
+        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
+      </Encargado>
+      <Operacion>Ingreso.</Operacion>
+    </logItem>
+    <logItem>
+      <Encargado>
+        <Nombre>admin</Nombre>
+        <Ci>47361944</Ci>
+        <PersonasACargo>0</PersonasACargo>
+        <Permisos>3</Permisos>
+        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
+      </Encargado>
+      <Operacion>Creacion de tripulante</Operacion>
+    </logItem>
+    <logItem>
+      <Encargado>
+        <Nombre>admin</Nombre>
+        <Ci>47361944</Ci>
+        <PersonasACargo>0</PersonasACargo>
+        <Permisos>3</Permisos>
+        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
+      </Encargado>
+      <Operacion>Ingreso.</Operacion>
+    </logItem>
+    <logItem>
+      <Encargado>
+        <Nombre>admin</Nombre>
+        <Ci>47361944</Ci>
+        <PersonasACargo>0</PersonasACargo>
+        <Permisos>3</Permisos>
+        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
+      </Encargado>
+      <Operacion>Creacion de encargado: jose2</Operacion>
+    </logItem>
+    <logItem>
+      <Encargado>
+        <Nombre>admin</Nombre>
+        <Ci>47361944</Ci>
+        <PersonasACargo>0</PersonasACargo>
+        <Permisos>3</Permisos>
+        <Password>21232F297A57A5A743894A0E4A801FC3</Password>
+      </Encargado>
+      <Operacion>Edicion de permisos del encargado: jose2</Operacion>
     </logItem>
   </Log>
 </barcobus>

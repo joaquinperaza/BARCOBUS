@@ -398,6 +398,7 @@ namespace barcobus
             barco b = db.Barcos.Find(b2 => b2.Nombre == b3);
             int mes = d.Month;
             int anio = d.Year;
+            int costo = 0;
             DataTable table = new DataTable();
             table.Columns.Add("Fecha", typeof(DateTime));
             table.Columns.Add("Tipo", typeof(string));
@@ -415,6 +416,7 @@ namespace barcobus
                     row["Tipo"] = "Mantenimiento";
                     row["Detalle"] = item.Descripcion;
                     row["Costo"] = item.Costo;
+                    costo += item.Costo;
                     table.Rows.Add(row);
                 }
             }
@@ -430,10 +432,22 @@ namespace barcobus
                     table.Rows.Add(row);
                 }
             }
+            DataRow row2 = table.NewRow();
+            DataRow row3 = table.NewRow();
+            table.Rows.Add(row3);
+            row2["Encargado"] = "TOTAL";
+            row2["Tipo"] = "---";
+            row2["Detalle"] ="---";
+            row2["Costo"] = costo;
+            table.Rows.Add(row2);
             return table;
         }
         public List<barco> barcoList() {
             return db.Barcos;
+        }
+        public List<encargado> encargadoList()
+        {
+            return db.Encargados;
         }
         public List<tripulante> tripulanteList()
         {   List<tripulante> free= db.Tripulantes.ToList<tripulante>();

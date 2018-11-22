@@ -41,5 +41,8 @@ namespace barcobus
         {
             get { return password; }
             set { password = value; }
-        }}
+        }
+        public override String ToString() { return nombre; }
+    }
+
 }

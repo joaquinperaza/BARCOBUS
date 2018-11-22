@@ -31,6 +31,11 @@ namespace barcobus
             else if (auth.Permisos < 1)
             {
                 label.Text = "No cuenta con los permisos necesarios para completar la operacion.";
+                registroReparacion rr = new registroReparacion();
+                rr.Reparacion = TextBox1.Text;
+                rr.Descripcion = TextBox2.Text;
+                rr.Encargado = auth;
+                Global.b.registrarReparacion(rr, DropDownList1.SelectedItem.Text, auth);
             }
             else try
                 {

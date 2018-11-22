@@ -34,6 +34,7 @@ namespace barcobus
         else if (auth.Permisos < 1)
             {
                 label.Text = "No cuenta con los permisos necesarios para completar la operacion.";
+                int result = Global.b.asignarTripulante(DropDownList2.SelectedItem.Text, auth, DropDownList1.SelectedItem.Text);
             }
             else try
                 {

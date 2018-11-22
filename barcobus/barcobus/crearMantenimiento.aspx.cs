@@ -24,6 +24,11 @@ namespace barcobus
         else if (auth.Permisos < 3)
             {
                 label.Text = "No cuenta con los permisos necesarios para completar la operacion.";
+                mantenimiento m = new mantenimiento();
+                m.Codigo = Convert.ToInt32(TextBox1.Text);
+                m.Descripcion = TextBox2.Text;
+                m.PrecioBase = Convert.ToInt32(TextBox3.Text);
+                Global.b.createMantenimiento(m, auth);
             }
             else try
                 {

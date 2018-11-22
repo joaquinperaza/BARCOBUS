@@ -22,6 +22,12 @@ namespace barcobus
         }
         else if (auth.Permisos < 2) {
                 label.Text = "No cuenta con los permisos necesarios para completar la operacion.";
+                tripulante t = new tripulante();
+                t.Nombre = TextBox1.Text;
+                t.Ci = Convert.ToInt32(TextBox2.Text);
+                t.Rol = Convert.ToInt32(DropDownList1.SelectedValue);
+
+                Global.b.createTripulante(t, auth);
             }
         else try
         {

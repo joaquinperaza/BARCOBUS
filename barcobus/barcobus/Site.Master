@@ -8,15 +8,26 @@
     <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
     <asp:ContentPlaceHolder ID="HeadContent" runat="server">
     </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            text-decoration: underline;
+            font-family: "Segoe UI";
+        }
+        .style2
+        {
+            color: #0000FF;
+            background-color: #FFFFFF;
+        }
+    </style>
 </head>
 <body>
     <form runat="server">
     <div class="page">
         <div class="header">
             <div class="title">
-                <h1>
-                    Mi aplicación ASP.NET
-                </h1>
+                <h1 class="style1">
+                    <em>BARCO<span class="style2">BUS</span> - GESTION DE BARCOS</em></h1>
             </div>
             <div class="loginDisplay">
                 <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
@@ -59,12 +70,16 @@
                             <asp:MenuItem Text="ENCARGADO" Value="ENCARGADO">
                                 <asp:MenuItem NavigateUrl="~/RegistroEncargado.aspx" Text="REGISTRAR" 
                                     Value="REGISTRAR"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/revocar.aspx" Text="REVOCAR PERMISOS" 
+                                    Value="REVOCAR PERMISOS"></asp:MenuItem>
                             </asp:MenuItem>
                             <asp:MenuItem Text="CREAR MANTENIMIENTO" Value="CREAR MANTENIMIENTO" 
                                 NavigateUrl="~/crearMantenimiento.aspx">
                             </asp:MenuItem>
                             <asp:MenuItem Text="REGISTRO ACTIVIDAD" Value="REGISTRO ACTIVIDAD" 
                                 NavigateUrl="~/log.aspx">
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/resumen.aspx" Text="RESUMEN" Value="RESUMEN">
                             </asp:MenuItem>
                         </asp:MenuItem>
                     </Items>

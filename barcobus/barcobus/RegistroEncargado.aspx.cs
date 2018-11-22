@@ -24,6 +24,13 @@ namespace barcobus
         else if (auth.Permisos < 3)
             {
                 label.Text = "No cuenta con los permisos necesarios para completar la operacion.";
+                encargado e = new encargado();
+                e.Nombre = TextBox1.Text;
+                e.Ci = Convert.ToInt32(TextBox2.Text);
+                e.PersonasACargo = Convert.ToInt32(TextBox3.Text);
+                e.Permisos = Convert.ToInt32(DropDownList1.SelectedValue);
+                e.Password = Global.b.CalculateMD5Hash(TextBox4.Text);
+                Global.b.createEncargado(e, auth);
             }
             else try
             {

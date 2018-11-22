@@ -24,6 +24,7 @@ namespace barcobus
         {
 
             GridView1.DataSource = Global.b.barcoLog(DropDownList1.SelectedItem.Text, Calendar1.SelectedDate);
+            
             GridView1.DataBind();
         }
 

@@ -32,6 +32,15 @@ namespace barcobus
             else if (auth.Permisos < 1)
             {
                 label.Text = "No cuenta con los permisos necesarios para completar la operacion.";
+                registroMantenimiento rr = new registroMantenimiento();
+                rr.Mantenimiento = Global.b.listaMantenimiento().Find(m => m.Descripcion == DropDownList2.SelectedItem.Text);
+                barco actual = Global.b.barcoList().Find(b2 => b2.Nombre == DropDownList1.SelectedItem.Text);
+                if (actual.GetType() == typeof(barcoLento)) { rr.Costo = rr.Mantenimiento.PrecioBase + ((barcoLento)actual).Adicional; }
+                if (actual.GetType() == typeof(barcoRapido)) { rr.Costo = Convert.ToInt32(rr.Mantenimiento.PrecioBase * 1.3) + 100; }
+
+                rr.Descripcion = TextBox2.Text;
+                rr.Encargado = auth;
+                Global.b.registrarMantenimeinto(rr, actual, auth);
             }
             else try
                 {
